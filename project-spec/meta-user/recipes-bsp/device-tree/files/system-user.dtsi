@@ -1,0 +1,62 @@
+/include/ "system-conf.dtsi"
+/ {
+	chosen {
+                bootargs = "earlycon console=ttyPS1,115200 clk_ignore_unused ext4=/dev/mmcblk0p2:/rootfs init_fatal_sh=1 cma=900M ";
+                stdout-path = "serial1:115200n8";
+        };
+};
+
+&cpu_opp_table {
+		compatible = "operating-points-v2";
+		opp-shared;
+		opp04 {
+			opp-hz = /bits/ 64 <1299999988>;
+			opp-microvolt = <1000000>;
+			clock-latency-ns = <500000>;
+			};
+};
+
+&amba {
+	idt5P49V6965_1: idt5P49V6965_1 { /* u17 */
+		compatible = "fixed-clock";
+		#clock-cells = <0>;
+		clock-frequency = <125000000>;
+	};
+
+	idt5P49V6965_3: idt5P49V6965_3 { /* u17 */
+		compatible = "fixed-clock";
+		#clock-cells = <0>;
+		clock-frequency = <26000000>;
+	};
+
+	idt5P49V6965_4: idt5P49V6965_4 { /* u17 */
+		compatible = "fixed-clock";
+		#clock-cells = <0>;
+		clock-frequency = <27000000>;
+	};
+
+	//usbhub: gl3523 {
+	//	compatible = "genesys,gl3523";
+    //    reset-gpios = <&gpio 44 GPIO_ACTIVE_HIGH>;
+    //    //reset-gpios = <&gpio 44 GPIO_ACTIVE_LOW>;
+	//};
+};
+
+&psgtr {
+	status = "okay";
+	/* pcie, usb3, sata */
+	clocks = <&idt5P49V6965_4>, <&idt5P49V6965_3>, <&idt5P49V6965_1>;
+	clock-names = "ref0", "ref1", "ref2";
+};
+
+&zynqmp_dpsub {
+	status = "okay";
+	phy-names = "dp-phy0";
+	phys = <&psgtr 1 PHY_TYPE_DP 0 0>;
+
+};
+
+&zynqmp_dpdma {
+	status = "okay";
+};
+

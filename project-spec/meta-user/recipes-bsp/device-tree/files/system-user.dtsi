@@ -16,6 +16,23 @@
 			};
 };
 
+&i2c1 { /* I2C_SCK C23/C24 - MIO from SOM */
+	#address-cells = <0>;
+	#size-cells = <0>;
+	pinctrl-names = "default", "gpio";
+	pinctrl-0 = <&pinctrl_i2c1_default>;
+	pinctrl-1 = <&pinctrl_i2c1_gpio>;
+	scl-gpios = <&gpio 24 GPIO_ACTIVE_HIGH>;
+	sda-gpios = <&gpio 25 GPIO_ACTIVE_HIGH>;
+
+    usbhub: usb5744@2d { /* u43 */
+        compatible = "microchip,usb5744";
+        reg = <0x2d>;
+        reset-gpios = <&gpio 44 GPIO_ACTIVE_LOW>;
+    };
+
+};
+
 &amba {
 	idt5P49V6965_1: idt5P49V6965_1 { /* u17 */
 		compatible = "fixed-clock";
@@ -35,11 +52,7 @@
 		clock-frequency = <27000000>;
 	};
 
-	//usbhub: gl3523 {
-	//	compatible = "genesys,gl3523";
-    //    reset-gpios = <&gpio 44 GPIO_ACTIVE_HIGH>;
-    //    //reset-gpios = <&gpio 44 GPIO_ACTIVE_LOW>;
-	//};
+
 };
 
 &psgtr {
@@ -58,5 +71,103 @@
 
 &zynqmp_dpdma {
 	status = "okay";
+};
+
+&usb0 {
+    status = "okay";
+    pinctrl-names = "default";
+    pinctrl-0 = <&pinctrl_usb0_default>;
+};
+
+&dwc3_0 {
+    status = "okay";
+    dr_mode = "host";
+    snps,usb3_lpm_capable;
+    phy-names = "usb3-phy";
+    phys = <&psgtr 2 PHY_TYPE_USB3 0 1>;
+    maximum-speed = "super-speed";
+};
+
+&pinctrl0 { /* required by spec */
+	status = "okay";
+
+	pinctrl_uart1_default: uart1-default {
+		conf {
+			groups = "uart1_9_grp";
+			slew-rate = <SLEW_RATE_SLOW>;
+			power-source = <IO_STANDARD_LVCMOS18>;
+		};
+
+		conf-rx {
+			pins = "MIO37";
+			bias-high-impedance;
+		};
+
+		conf-tx {
+			pins = "MIO36";
+			bias-disable;
+		};
+
+		mux {
+			groups = "uart1_9_grp";
+			function = "uart1";
+		};
+	};
+
+	pinctrl_i2c1_default: i2c1-default {
+		conf {
+			groups = "i2c1_6_grp";
+			bias-pull-up;
+			slew-rate = <SLEW_RATE_SLOW>;
+			power-source = <IO_STANDARD_LVCMOS18>;
+		};
+
+		mux {
+			groups = "i2c1_6_grp";
+			function = "i2c1";
+		};
+	};
+
+	pinctrl_i2c1_gpio: i2c1-gpio {
+		conf {
+			groups = "gpio0_24_grp", "gpio0_25_grp";
+			slew-rate = <SLEW_RATE_SLOW>;
+			power-source = <IO_STANDARD_LVCMOS18>;
+		};
+
+		mux {
+			groups = "gpio0_24_grp", "gpio0_25_grp";
+			function = "gpio0";
+		};
+	};
+
+
+	pinctrl_usb0_default: usb0-default {
+		conf {
+			groups = "usb0_0_grp";
+			slew-rate = <SLEW_RATE_SLOW>;
+			power-source = <IO_STANDARD_LVCMOS18>;
+			//power-source = <IO_STANDARD_LVCMOS33>;
+			//drive-strength = <12>;
+		};
+
+		conf-rx {
+			pins = "MIO52", "MIO53", "MIO55";
+			bias-high-impedance;
+		};
+
+		conf-tx {
+			pins = "MIO54", "MIO56", "MIO57", "MIO58", "MIO59",
+			"MIO60", "MIO61", "MIO62", "MIO63";
+			bias-disable;
+		};
+
+		mux {
+			groups = "usb0_0_grp";
+			function = "usb0";
+		};
+	};
+
+
 };
 

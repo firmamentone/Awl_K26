@@ -3,20 +3,20 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Oct  1 14:28:56 2024
-# Process ID: 233584
-# Current directory: /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1
+# Start of session at: Tue Oct  8 17:15:21 2024
+# Process ID: 601265
+# Current directory: /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1
 # Command line: vivado -log project_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_1_wrapper.tcl
-# Log file: /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/project_1_wrapper.vds
-# Journal file: /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/vivado.jou
+# Log file: /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/project_1_wrapper.vds
+# Journal file: /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/vivado.jou
 # Running On: 51-0B10160-01, OS: Linux, CPU Frequency: 2600.000 MHz, CPU Physical cores: 6, Host memory: 33513 MB
 #-----------------------------------------------------------
 source project_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/tikao/K26Based/Awl_K26/hardware/DPUCZDX8G/dpu_ip/DPUCZDX8G_v4_0_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
-Command: read_checkpoint -auto_incremental -incremental /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/utils_1/imports/synth_1/project_1_wrapper.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/utils_1/imports/synth_1/project_1_wrapper.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/utils_1/imports/synth_1/project_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/utils_1/imports/synth_1/project_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top project_1_wrapper -part xck26-sfvc784-2LVI-i
 Starting synth_design
@@ -27,55 +27,256 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 233625
+INFO: [Synth 8-7075] Helper process launched with PID 601315
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2611.629 ; gain = 286.777 ; free physical = 1848 ; free virtual = 20350
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2624.695 ; gain = 285.691 ; free physical = 11873 ; free virtual = 20747
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'project_1_wrapper' [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/sources_1/imports/hdl/project_1_wrapper.v:13]
-INFO: [Synth 8-6157] synthesizing module 'project_1' [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:13]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:18]
-INFO: [Synth 8-6157] synthesizing module 'project_1_zynq_ultra_ps_e_0_0' [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-233584-51-0B10160-01/realtime/project_1_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'project_1_zynq_ultra_ps_e_0_0' (0#1) [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-233584-51-0B10160-01/realtime/project_1_zynq_ultra_ps_e_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'pl_resetn0' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:18]
-WARNING: [Synth 8-7071] port 'pl_clk0' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:18]
-WARNING: [Synth 8-7071] port 'pl_clk1' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:18]
-WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'project_1_zynq_ultra_ps_e_0_0' has 4 connections declared, but only 1 given [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'project_1' (0#1) [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'project_1_wrapper' (0#1) [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/sources_1/imports/hdl/project_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'project_1_wrapper' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/sources_1/imports/hdl/project_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'project_1' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2441]
+INFO: [Synth 8-6157] synthesizing module 'project_1_dpu_concat_irq_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_concat_irq_0/synth/project_1_dpu_concat_irq_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_dpu_concat_irq_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_concat_irq_0/synth/project_1_dpu_concat_irq_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hier_dpu_imp_18VFY5X' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:1255]
+INFO: [Synth 8-6157] synthesizing module 'project_1_DPUCZDX8G_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_DPUCZDX8G_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_DPUCZDX8G_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_DPUCZDX8G_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'dpu0_m_axi_instr_awuser' of module 'project_1_DPUCZDX8G_0' is unconnected for instance 'DPUCZDX8G' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2012]
+WARNING: [Synth 8-7071] port 'dpu0_m_axi_instr_wid' of module 'project_1_DPUCZDX8G_0' is unconnected for instance 'DPUCZDX8G' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2012]
+WARNING: [Synth 8-7071] port 'dpu0_m_axi_instr_aruser' of module 'project_1_DPUCZDX8G_0' is unconnected for instance 'DPUCZDX8G' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2012]
+WARNING: [Synth 8-7071] port 'dpu0_m_axi_data0_wid' of module 'project_1_DPUCZDX8G_0' is unconnected for instance 'DPUCZDX8G' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2012]
+WARNING: [Synth 8-7071] port 'dpu0_m_axi_data1_wid' of module 'project_1_DPUCZDX8G_0' is unconnected for instance 'DPUCZDX8G' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2012]
+WARNING: [Synth 8-7023] instance 'DPUCZDX8G' of module 'project_1_DPUCZDX8G_0' has 170 connections declared, but only 165 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2012]
+INFO: [Synth 8-6157] synthesizing module 'hier_dpu_clk_imp_1CTNM6E' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'project_1_dpu_clk_wiz_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_dpu_clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_dpu_clk_wiz_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_dpu_clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'project_1_rst_gen_clk_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_rst_gen_clk_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_rst_gen_clk_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_rst_gen_clk_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_rst_gen_clk_0' is unconnected for instance 'rst_gen_clk' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:59]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_rst_gen_clk_0' is unconnected for instance 'rst_gen_clk' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:59]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_rst_gen_clk_0' is unconnected for instance 'rst_gen_clk' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:59]
+WARNING: [Synth 8-7023] instance 'rst_gen_clk' of module 'project_1_rst_gen_clk_0' has 10 connections declared, but only 7 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:59]
+INFO: [Synth 8-6157] synthesizing module 'project_1_rst_gen_clk_dsp_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_rst_gen_clk_dsp_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_rst_gen_clk_dsp_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_rst_gen_clk_dsp_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_rst_gen_clk_dsp_0' is unconnected for instance 'rst_gen_clk_dsp' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:67]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_rst_gen_clk_dsp_0' is unconnected for instance 'rst_gen_clk_dsp' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:67]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_rst_gen_clk_dsp_0' is unconnected for instance 'rst_gen_clk_dsp' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:67]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'project_1_rst_gen_clk_dsp_0' is unconnected for instance 'rst_gen_clk_dsp' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:67]
+WARNING: [Synth 8-7023] instance 'rst_gen_clk_dsp' of module 'project_1_rst_gen_clk_dsp_0' has 10 connections declared, but only 6 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'hier_dpu_clk_imp_1CTNM6E' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:13]
+WARNING: [Synth 8-7071] port 'LOCKED' of module 'hier_dpu_clk_imp_1CTNM6E' is unconnected for instance 'hier_dpu_clk' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2178]
+WARNING: [Synth 8-7023] instance 'hier_dpu_clk' of module 'hier_dpu_clk_imp_1CTNM6E' has 9 connections declared, but only 8 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2178]
+INFO: [Synth 8-6157] synthesizing module 'hier_dpu_ghp_imp_1I7UWO4' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:76]
+INFO: [Synth 8-6157] synthesizing module 'project_1_dpu_intc_M_AXI_HP0_FPD_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2945]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_8NA42J' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4651]
+INFO: [Synth 8-6157] synthesizing module 'project_1_auto_cc_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_auto_cc_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'project_1_auto_cc_0' is unconnected for instance 'auto_cc' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4982]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'project_1_auto_cc_0' is unconnected for instance 'auto_cc' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4982]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'project_1_auto_cc_0' has 86 connections declared, but only 84 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4982]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_8NA42J' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4651]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_dpu_intc_M_AXI_HP0_FPD_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2945]
+INFO: [Synth 8-6157] synthesizing module 'project_1_dpu_intc_M_AXI_HP1_FPD_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3365]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_VJ71AY' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:5069]
+INFO: [Synth 8-6157] synthesizing module 'project_1_auto_cc_1' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_auto_cc_1' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_auto_cc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'project_1_auto_cc_1' is unconnected for instance 'auto_cc' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:5400]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'project_1_auto_cc_1' is unconnected for instance 'auto_cc' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:5400]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'project_1_auto_cc_1' has 86 connections declared, but only 84 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:5400]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_VJ71AY' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:5069]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_dpu_intc_M_AXI_HP1_FPD_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3365]
+INFO: [Synth 8-6157] synthesizing module 'project_1_dpu_intc_M_AXI_LPD_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3785]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_120WWF' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4165]
+INFO: [Synth 8-6157] synthesizing module 'project_1_auto_cc_2' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_auto_cc_2' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_auto_cc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'project_1_auto_cc_2' is unconnected for instance 'auto_cc' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4499]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'project_1_auto_cc_2' is unconnected for instance 'auto_cc' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4499]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'project_1_auto_cc_2' has 74 connections declared, but only 72 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4499]
+INFO: [Synth 8-6157] synthesizing module 'project_1_auto_us_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_auto_us_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_120WWF' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:4165]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_dpu_intc_M_AXI_LPD_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3785]
+INFO: [Synth 8-6155] done synthesizing module 'hier_dpu_ghp_imp_1I7UWO4' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:76]
+INFO: [Synth 8-6157] synthesizing module 'hier_dpu_irq_imp_128HJ7V' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2425]
+INFO: [Synth 8-6157] synthesizing module 'project_1_dpu_concat_irq_inner_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_concat_irq_inner_0/synth/project_1_dpu_concat_irq_inner_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_dpu_concat_irq_inner_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_concat_irq_inner_0/synth/project_1_dpu_concat_irq_inner_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hier_dpu_irq_imp_128HJ7V' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2425]
+INFO: [Synth 8-6155] done synthesizing module 'hier_dpu_imp_18VFY5X' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:1255]
+INFO: [Synth 8-6157] synthesizing module 'project_1_rst_gen_ghp_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_rst_gen_ghp_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_rst_gen_ghp_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_rst_gen_ghp_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_rst_gen_ghp_0' is unconnected for instance 'rst_gen_ghp' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2766]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_rst_gen_ghp_0' is unconnected for instance 'rst_gen_ghp' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2766]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_rst_gen_ghp_0' is unconnected for instance 'rst_gen_ghp' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2766]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'project_1_rst_gen_ghp_0' is unconnected for instance 'rst_gen_ghp' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2766]
+WARNING: [Synth 8-7023] instance 'rst_gen_ghp' of module 'project_1_rst_gen_ghp_0' has 10 connections declared, but only 6 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2766]
+INFO: [Synth 8-6157] synthesizing module 'project_1_rst_gen_reg_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_rst_gen_reg_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_rst_gen_reg_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_rst_gen_reg_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_rst_gen_reg_0' is unconnected for instance 'rst_gen_reg' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2773]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_rst_gen_reg_0' is unconnected for instance 'rst_gen_reg' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2773]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_rst_gen_reg_0' is unconnected for instance 'rst_gen_reg' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2773]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'project_1_rst_gen_reg_0' is unconnected for instance 'rst_gen_reg' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2773]
+WARNING: [Synth 8-7023] instance 'rst_gen_reg' of module 'project_1_rst_gen_reg_0' has 10 connections declared, but only 6 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2773]
+INFO: [Synth 8-6157] synthesizing module 'project_1_zynq_ultra_ps_e_0_0' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_zynq_ultra_ps_e_0_0' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/.Xil/Vivado-601265-51-0B10160-01/realtime/project_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'saxigp6_bid' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2780]
+WARNING: [Synth 8-7071] port 'saxigp6_rid' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e' [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2780]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e' of module 'project_1_zynq_ultra_ps_e_0_0' has 164 connections declared, but only 162 given [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2780]
+INFO: [Synth 8-6155] done synthesizing module 'project_1' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2441]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_wrapper' (0#1) [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/sources_1/imports/hdl/project_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port In1[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2686.598 ; gain = 361.746 ; free physical = 1753 ; free virtual = 20256
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2712.664 ; gain = 373.660 ; free physical = 11757 ; free virtual = 20632
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2695.504 ; gain = 370.652 ; free physical = 1751 ; free virtual = 20254
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2718.602 ; gain = 379.598 ; free physical = 11757 ; free virtual = 20632
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2695.504 ; gain = 370.652 ; free physical = 1751 ; free virtual = 20254
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2718.602 ; gain = 379.598 ; free physical = 11757 ; free virtual = 20632
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2695.504 ; gain = 0.000 ; free physical = 1751 ; free virtual = 20254
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2718.602 ; gain = 0.000 ; free physical = 11757 ; free virtual = 20632
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'project_1_i/zynq_ultra_ps_e_0'
-Finished Parsing XDC File [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'project_1_i/zynq_ultra_ps_e_0'
-Parsing XDC File [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc]
-Finished Parsing XDC File [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc]
-Parsing XDC File [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'project_1_i/zynq_ultra_ps_e'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'project_1_i/zynq_ultra_ps_e'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0_in_context.xdc] for cell 'project_1_i/hier_dpu/DPUCZDX8G'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0_in_context.xdc] for cell 'project_1_i/hier_dpu/DPUCZDX8G'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk_dsp'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk_dsp'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0/project_1_auto_cc_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0/project_1_auto_cc_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1/project_1_auto_cc_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1/project_1_auto_cc_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0/project_1_auto_us_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0/project_1_auto_us_0_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2/project_1_auto_cc_2_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2/project_1_auto_cc_2_in_context.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0_in_context.xdc] for cell 'project_1_i/rst_gen_ghp'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0_in_context.xdc] for cell 'project_1_i/rst_gen_ghp'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0/project_1_rst_gen_ghp_0_in_context.xdc] for cell 'project_1_i/rst_gen_reg'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0/project_1_rst_gen_ghp_0_in_context.xdc] for cell 'project_1_i/rst_gen_reg'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc]
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc]
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2768.441 ; gain = 0.000 ; free physical = 1745 ; free virtual = 20247
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2790.266 ; gain = 0.000 ; free physical = 11744 ; free virtual = 20619
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2768.477 ; gain = 0.000 ; free physical = 1745 ; free virtual = 20247
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2790.301 ; gain = 0.000 ; free physical = 11744 ; free virtual = 20619
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2768.477 ; gain = 443.625 ; free physical = 1753 ; free virtual = 20255
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2790.301 ; gain = 451.297 ; free physical = 11754 ; free virtual = 20630
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -83,18 +284,33 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LVI-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2768.477 ; gain = 443.625 ; free physical = 1753 ; free virtual = 20255
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2790.301 ; gain = 451.297 ; free physical = 11754 ; free virtual = 20630
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for project_1_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/zynq_ultra_ps_e. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/dpu_concat_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/DPUCZDX8G. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk_dsp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/hier_dpu/hier_dpu_irq/dpu_concat_irq_inner. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/rst_gen_ghp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/rst_gen_reg. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2768.477 ; gain = 443.625 ; free physical = 1753 ; free virtual = 20255
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2790.301 ; gain = 451.297 ; free physical = 11754 ; free virtual = 20630
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2768.477 ; gain = 443.625 ; free physical = 1752 ; free virtual = 20255
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2790.301 ; gain = 451.297 ; free physical = 11753 ; free virtual = 20630
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -117,25 +333,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2768.477 ; gain = 443.625 ; free physical = 1748 ; free virtual = 20256
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2790.301 ; gain = 451.297 ; free physical = 11748 ; free virtual = 20630
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3254.145 ; gain = 929.293 ; free physical = 1295 ; free virtual = 19803
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3269.602 ; gain = 930.598 ; free physical = 11317 ; free virtual = 20200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3254.145 ; gain = 929.293 ; free physical = 1295 ; free virtual = 19803
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3269.602 ; gain = 930.598 ; free physical = 11317 ; free virtual = 20200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3264.160 ; gain = 939.309 ; free physical = 1286 ; free virtual = 19795
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3281.609 ; gain = 942.605 ; free physical = 11307 ; free virtual = 20189
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -153,37 +369,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3278.035 ; gain = 953.184 ; free physical = 1286 ; free virtual = 19794
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3295.484 ; gain = 956.480 ; free physical = 11306 ; free virtual = 20189
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3278.035 ; gain = 953.184 ; free physical = 1286 ; free virtual = 19794
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3295.484 ; gain = 956.480 ; free physical = 11306 ; free virtual = 20189
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3278.035 ; gain = 953.184 ; free physical = 1286 ; free virtual = 19794
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3295.484 ; gain = 956.480 ; free physical = 11306 ; free virtual = 20189
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3278.035 ; gain = 953.184 ; free physical = 1286 ; free virtual = 19794
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3295.484 ; gain = 956.480 ; free physical = 11306 ; free virtual = 20189
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3278.035 ; gain = 953.184 ; free physical = 1286 ; free virtual = 19794
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3295.484 ; gain = 956.480 ; free physical = 11306 ; free virtual = 20189
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3278.035 ; gain = 953.184 ; free physical = 1286 ; free virtual = 19794
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3295.484 ; gain = 956.480 ; free physical = 11306 ; free virtual = 20189
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -193,36 +409,54 @@ Report BlackBoxes:
 +------+------------------------------+----------+
 |      |BlackBox name                 |Instances |
 +------+------------------------------+----------+
-|1     |project_1_zynq_ultra_ps_e_0_0 |         1|
+|1     |project_1_rst_gen_ghp_0       |         1|
+|2     |project_1_rst_gen_reg_0       |         1|
+|3     |project_1_zynq_ultra_ps_e_0_0 |         1|
+|4     |project_1_DPUCZDX8G_0         |         1|
+|5     |project_1_dpu_clk_wiz_0       |         1|
+|6     |project_1_rst_gen_clk_0       |         1|
+|7     |project_1_rst_gen_clk_dsp_0   |         1|
+|8     |project_1_auto_cc_0           |         1|
+|9     |project_1_auto_cc_1           |         1|
+|10    |project_1_auto_cc_2           |         1|
+|11    |project_1_auto_us_0           |         1|
 +------+------------------------------+----------+
 
 Report Cell Usage: 
 +------+----------------------------+------+
 |      |Cell                        |Count |
 +------+----------------------------+------+
-|1     |project_1_zynq_ultra_ps_e_0 |     1|
+|1     |project_1_DPUCZDX8G         |     1|
+|2     |project_1_auto_cc           |     3|
+|5     |project_1_auto_us           |     1|
+|6     |project_1_dpu_clk_wiz       |     1|
+|7     |project_1_rst_gen_clk       |     1|
+|8     |project_1_rst_gen_clk_dsp   |     1|
+|9     |project_1_rst_gen_ghp       |     1|
+|10    |project_1_rst_gen_reg       |     1|
+|11    |project_1_zynq_ultra_ps_e_0 |     1|
 +------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3278.035 ; gain = 953.184 ; free physical = 1286 ; free virtual = 19794
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3295.484 ; gain = 956.480 ; free physical = 11306 ; free virtual = 20189
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3278.035 ; gain = 880.211 ; free physical = 1286 ; free virtual = 19794
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3278.043 ; gain = 953.184 ; free physical = 1286 ; free virtual = 19794
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3295.484 ; gain = 884.781 ; free physical = 11306 ; free virtual = 20188
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3295.492 ; gain = 956.480 ; free physical = 11306 ; free virtual = 20188
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3278.043 ; gain = 0.000 ; free physical = 1286 ; free virtual = 19794
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3295.492 ; gain = 0.000 ; free physical = 11591 ; free virtual = 20474
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3313.691 ; gain = 0.000 ; free physical = 1541 ; free virtual = 20049
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3337.109 ; gain = 0.000 ; free physical = 11556 ; free virtual = 20438
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 1ea6d175
+Synth Design complete | Checksum: b24ab110
 INFO: [Common 17-83] Releasing license: Synthesis
-28 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+75 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 3328.664 ; gain = 1931.938 ; free physical = 1529 ; free virtual = 20038
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2572.122; main = 2572.122; forked = 389.054
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3725.578; main = 3328.633; forked = 989.148
-INFO: [Common 17-1381] The checkpoint '/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/project_1_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 3343.082 ; gain = 1941.250 ; free physical = 11544 ; free virtual = 20426
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2586.499; main = 2586.499; forked = 383.723
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3747.395; main = 3343.051; forked = 989.141
+INFO: [Common 17-1381] The checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/project_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file project_1_wrapper_utilization_synth.rpt -pb project_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct  1 14:29:25 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  8 17:15:51 2024...

@@ -1,0 +1,12 @@
+set_property SRC_FILE_INFO {cfile:/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0.xdc rfile:../../../project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0.xdc id:1 order:LATE scoped_inst:inst} [current_design]
+current_instance inst
+set_property src_info {type:SCOPED_XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
+set_multicycle_path 2 -setup -start -from [get_clocks -of_objects [get_ports dpu_2x_clk]]   -to [get_clocks -of_objects [get_ports m_axi_dpu_aclk]]
+set_property src_info {type:SCOPED_XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
+set_multicycle_path 2 -setup -end   -from [get_clocks -of_objects [get_ports m_axi_dpu_aclk]]   -to [get_clocks -of_objects [get_ports dpu_2x_clk]]
+set_property src_info {type:SCOPED_XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]
+set clk_1x_period     [get_property PERIOD [get_clocks -of_objects [get_ports m_axi_dpu_aclk]]]
+set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
+set clk_2x_max_delay  [expr $clk_1x_period * 2]
+set_property src_info {type:SCOPED_XDC file:1 line:32 export:INPUT save:INPUT read:READ} [current_design]
+set_max_delay $clk_2x_max_delay -through [get_ports dpu*_2x_clk_ce  ]

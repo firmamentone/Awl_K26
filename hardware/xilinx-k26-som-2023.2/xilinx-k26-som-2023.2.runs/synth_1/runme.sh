@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1'
+HD_PWD='/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

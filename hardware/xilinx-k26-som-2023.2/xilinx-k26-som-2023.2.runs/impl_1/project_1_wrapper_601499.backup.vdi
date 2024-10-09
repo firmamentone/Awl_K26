@@ -1,0 +1,1083 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Oct  8 17:15:55 2024
+# Process ID: 601499
+# Current directory: /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1
+# Command line: vivado -log project_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source project_1_wrapper.tcl -notrace
+# Log file: /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper.vdi
+# Journal file: /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/vivado.jou
+# Running On: 51-0B10160-01, OS: Linux, CPU Frequency: 2600.000 MHz, CPU Physical cores: 6, Host memory: 33513 MB
+#-----------------------------------------------------------
+source project_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/tikao/K26Based/Awl_K26/hardware/DPUCZDX8G/dpu_ip/DPUCZDX8G_v4_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+Command: link_design -top project_1_wrapper -part xck26-sfvc784-2LVI-i
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LVI-i
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0.dcp' for cell 'project_1_i/rst_gen_ghp'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0.dcp' for cell 'project_1_i/rst_gen_reg'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0.dcp' for cell 'project_1_i/zynq_ultra_ps_e'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0.dcp' for cell 'project_1_i/hier_dpu/DPUCZDX8G'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0.dcp' for cell 'project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0.dcp' for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0.dcp' for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk_dsp'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0.dcp' for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1.dcp' for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2.dcp' for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0.dcp' for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us'
+Netlist sorting complete. Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2376.152 ; gain = 0.000 ; free physical = 12441 ; free virtual = 21318
+INFO: [Netlist 29-17] Analyzing 1521 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0.xdc] for cell 'project_1_i/zynq_ultra_ps_e/inst'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0.xdc] for cell 'project_1_i/zynq_ultra_ps_e/inst'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0_board.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0_board.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0.xdc:54]
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0_board.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk/U0'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0_board.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk/U0'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk/U0'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk/U0'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0_board.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk_dsp/U0'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0_board.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk_dsp/U0'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk_dsp/U0'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_clk/rst_gen_clk_dsp/U0'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0_board.xdc] for cell 'project_1_i/rst_gen_ghp/U0'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0_board.xdc] for cell 'project_1_i/rst_gen_ghp/U0'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0.xdc] for cell 'project_1_i/rst_gen_ghp/U0'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0.xdc] for cell 'project_1_i/rst_gen_ghp/U0'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0_board.xdc] for cell 'project_1_i/rst_gen_reg/U0'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0_board.xdc] for cell 'project_1_i/rst_gen_reg/U0'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0.xdc] for cell 'project_1_i/rst_gen_reg/U0'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0.xdc] for cell 'project_1_i/rst_gen_reg/U0'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc]
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc]
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0.xdc] for cell 'project_1_i/hier_dpu/DPUCZDX8G/inst'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0.xdc] for cell 'project_1_i/hier_dpu/DPUCZDX8G/inst'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0_impl.xdc] for cell 'project_1_i/hier_dpu/DPUCZDX8G/inst'
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0_impl.xdc] for cell 'project_1_i/hier_dpu/DPUCZDX8G/inst'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:35]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:56]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc:70]
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:35]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:56]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc:70]
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-920] Waiver ID 'CDC-1' -to list has >10000 objects! [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc:54]
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_us/inst'
+Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:35]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:56]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc:70]
+Finished Parsing XDC File [/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc] for cell 'project_1_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst'
+INFO: [Project 1-1714] 99 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 63 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3858.977 ; gain = 0.000 ; free physical = 11405 ; free virtual = 20283
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 504 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 134 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 152 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 13 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 3 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 184 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 6 instances
+
+25 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 3858.977 ; gain = 2456.754 ; free physical = 11405 ; free virtual = 20284
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.72 . Memory (MB): peak = 3858.977 ; gain = 0.000 ; free physical = 11403 ; free virtual = 20281
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: c79a5c4e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:02 . Memory (MB): peak = 3858.977 ; gain = 0.000 ; free physical = 11382 ; free virtual = 20261
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: c79a5c4e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11139 ; free virtual = 20018
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: c79a5c4e
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11139 ; free virtual = 20018
+Phase 1 Initialization | Checksum: c79a5c4e
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11139 ; free virtual = 20018
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: c79a5c4e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.93 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11109 ; free virtual = 19988
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: c79a5c4e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11093 ; free virtual = 19973
+Phase 2 Timer Update And Timing Data Collection | Checksum: c79a5c4e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11093 ; free virtual = 19973
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 13 inverters resulting in an inversion of 132 pins
+INFO: [Opt 31-138] Pushed 122 inverter(s) to 2631 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 115c01d1f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11092 ; free virtual = 19972
+Retarget | Checksum: 115c01d1f
+INFO: [Opt 31-389] Phase Retarget created 179 cells and removed 629 cells
+INFO: [Opt 31-1021] In phase Retarget, 103 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 9 load pin(s).
+Phase 4 Constant propagation | Checksum: 1a4bc7198
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11092 ; free virtual = 19971
+Constant propagation | Checksum: 1a4bc7198
+INFO: [Opt 31-389] Phase Constant propagation created 285 cells and removed 1404 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 104 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: d9689084
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11091 ; free virtual = 19971
+Sweep | Checksum: d9689084
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 607 cells
+INFO: [Opt 31-1021] In phase Sweep, 451 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 15b83274b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+BUFG optimization | Checksum: 15b83274b
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[10].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[11].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[12].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[13].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[14].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[15].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[16].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[17].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[18].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[19].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[1].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[20].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[21].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[22].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[23].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[24].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[25].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[26].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[27].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[28].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[29].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[2].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[30].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[31].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[32].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[33].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[34].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[35].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[36].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[37].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[38].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[39].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[3].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[40].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[41].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[42].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[43].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[44].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[45].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[46].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[47].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[48].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[49].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[4].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[50].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[51].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[52].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[53].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[54].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[55].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[56].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[57].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[58].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[59].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[5].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[60].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[61].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[62].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[63].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[64].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[65].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[6].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[7].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[8].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_din/GenSrl16E.GenSrl[9].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_writer_gen[0].u_alu_writer/u_ds_startact/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_ds_sig_sowr_pre4/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[0].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[0].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[1].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[0].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[2].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[0].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[3].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[0].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[4].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[0].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[5].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[0].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[6].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[0].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[7].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[1].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[1].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[1].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[1].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[2].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[1].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[3].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[1].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[4].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[1].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[5].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[1].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[6].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/GenOCP[1].GenWP[0].u_ds_systolic_sync/GenSrl16E.GenSrl[7].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/u_ds_ser/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/u_ds_ser/GenSrl16E.GenSrl[1].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/u_ds_sotrig_pre/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_nl/u_ds_eotrig/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[0].u_ds_img/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[0].u_ds_img/GenSrl16E.GenSrl[1].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[0].u_ds_img/GenSrl16E.GenSrl[2].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[0].u_ds_img/GenSrl16E.GenSrl[3].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[0].u_ds_img/GenSrl16E.GenSrl[4].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[0].u_ds_img/GenSrl16E.GenSrl[5].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[0].u_ds_img/GenSrl16E.GenSrl[6].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[0].u_ds_img/GenSrl16E.GenSrl[7].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[1].u_ds_img/GenSrl16E.GenSrl[0].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[1].u_ds_img/GenSrl16E.GenSrl[1].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[1].u_ds_img/GenSrl16E.GenSrl[2].u_srl due to physical constraint on it
+WARNING: [Opt 31-1131] Can not pull register out from project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenSystolicImgDlyInit[1].GenSystolicImgDlyInitPack[1].u_ds_img/GenSrl16E.GenSrl[3].u_srl due to physical constraint on it
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 181fa8129
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+Shift Register Optimization | Checksum: 181fa8129
+INFO: [Opt 31-389] Phase Shift Register Optimization created 1 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 19699840a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+Post Processing Netlist | Checksum: 19699840a
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 140 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 113a47e17
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 113a47e17
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+Phase 9 Finalization | Checksum: 113a47e17
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             179  |             629  |                                            103  |
+|  Constant propagation         |             285  |            1404  |                                            104  |
+|  Sweep                        |               0  |             607  |                                            451  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               1  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            140  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 113a47e17
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 113a47e17
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 113a47e17
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+Ending Netlist Obfuscation Task | Checksum: 113a47e17
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3960.711 ; gain = 0.000 ; free physical = 11089 ; free virtual = 19969
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 151 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 3960.711 ; gain = 101.734 ; free physical = 11089 ; free virtual = 19969
+INFO: [runtcl-4] Executing : report_drc -file project_1_wrapper_drc_opted.rpt -pb project_1_wrapper_drc_opted.pb -rpx project_1_wrapper_drc_opted.rpx
+Command: report_drc -file project_1_wrapper_drc_opted.rpt -pb project_1_wrapper_drc_opted.pb -rpx project_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.07 . Memory (MB): peak = 4101.367 ; gain = 19.812 ; free physical = 11028 ; free virtual = 19921
+INFO: [Common 17-1381] The checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 4101.367 ; gain = 76.625 ; free physical = 10988 ; free virtual = 19894
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4214.484 ; gain = 0.000 ; free physical = 10945 ; free virtual = 19851
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 2a35f3fd
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4214.484 ; gain = 0.000 ; free physical = 10945 ; free virtual = 19851
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4214.484 ; gain = 0.000 ; free physical = 10944 ; free virtual = 19851
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17342a989
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 5051.977 ; gain = 837.492 ; free physical = 9926 ; free virtual = 18969
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 222b1cdf9
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:22 . Memory (MB): peak = 5091.020 ; gain = 876.535 ; free physical = 9932 ; free virtual = 18977
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 222b1cdf9
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:22 . Memory (MB): peak = 5091.020 ; gain = 876.535 ; free physical = 9932 ; free virtual = 18977
+Phase 1 Placer Initialization | Checksum: 222b1cdf9
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 5091.020 ; gain = 876.535 ; free physical = 9932 ; free virtual = 18977
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 22aacef8d
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:33 . Memory (MB): peak = 5091.020 ; gain = 876.535 ; free physical = 9914 ; free virtual = 18961
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 22aacef8d
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:34 . Memory (MB): peak = 5091.020 ; gain = 876.535 ; free physical = 9914 ; free virtual = 18963
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 22aacef8d
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:37 . Memory (MB): peak = 5330.004 ; gain = 1115.520 ; free physical = 9182 ; free virtual = 18659
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 216cb4af0
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:38 . Memory (MB): peak = 5362.020 ; gain = 1147.535 ; free physical = 9180 ; free virtual = 18658
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 216cb4af0
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:38 . Memory (MB): peak = 5362.020 ; gain = 1147.535 ; free physical = 9180 ; free virtual = 18658
+Phase 2.1.1 Partition Driven Placement | Checksum: 216cb4af0
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:38 . Memory (MB): peak = 5362.020 ; gain = 1147.535 ; free physical = 9179 ; free virtual = 18657
+Phase 2.1 Floorplanning | Checksum: 1e7dbf0d5
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:38 . Memory (MB): peak = 5362.020 ; gain = 1147.535 ; free physical = 9179 ; free virtual = 18657
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1e7dbf0d5
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:38 . Memory (MB): peak = 5362.020 ; gain = 1147.535 ; free physical = 9179 ; free virtual = 18657
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1f90d3578
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:38 . Memory (MB): peak = 5362.020 ; gain = 1147.535 ; free physical = 9179 ; free virtual = 18657
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 244500a05
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:03 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9029 ; free virtual = 18508
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 7 LUTNM shape to break, 1424 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 7, two critical 0, total 7, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 614 nets or LUTs. Breaked 7 LUTs, combined 607 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 170 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/rst_n_r. Replicated 9 times.
+INFO: [Physopt 32-81] Processed net project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/nl_tvalid. Replicated 5 times.
+INFO: [Physopt 32-232] Optimized 2 nets. Created 14 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 14 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 5478.047 ; gain = 0.000 ; free physical = 9025 ; free virtual = 18506
+INFO: [Physopt 32-457] Pass 1. Identified 25 candidate cells for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 2 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 2 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 2 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 2 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-457] Pass 2. Identified 1 candidate cell for DSP register optimization.
+INFO: [Physopt 32-457] Pass 2. Identified 3 candidate cells for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell project_1_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 22 nets or cells. Created 188 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5478.047 ; gain = 0.000 ; free physical = 9024 ; free virtual = 18505
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5478.047 ; gain = 0.000 ; free physical = 9024 ; free virtual = 18505
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            7  |            607  |                   614  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |           14  |              0  |                     2  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |          188  |              0  |                    22  |           0  |           1  |  00:00:02  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          209  |            607  |                   638  |           0  |          10  |  00:00:04  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 22dcb0f05
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:01:09 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9027 ; free virtual = 18508
+Phase 2.4 Global Placement Core | Checksum: 5ee8f594
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:13 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9095 ; free virtual = 18577
+Phase 2 Global Placement | Checksum: 5ee8f594
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:13 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9095 ; free virtual = 18577
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: bbd01252
+
+Time (s): cpu = 00:03:18 ; elapsed = 00:01:17 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9030 ; free virtual = 18512
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a3113fc9
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:01:19 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9027 ; free virtual = 18509
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 11d7a3997
+
+Time (s): cpu = 00:04:00 ; elapsed = 00:01:28 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9024 ; free virtual = 18506
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 15b8ff394
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:32 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9026 ; free virtual = 18508
+Phase 3.3.2 Slice Area Swap | Checksum: 15b8ff394
+
+Time (s): cpu = 00:04:05 ; elapsed = 00:01:32 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9028 ; free virtual = 18510
+Phase 3.3 Small Shape DP | Checksum: 1b064167b
+
+Time (s): cpu = 00:04:14 ; elapsed = 00:01:35 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9027 ; free virtual = 18510
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 182da44b7
+
+Time (s): cpu = 00:04:16 ; elapsed = 00:01:37 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9025 ; free virtual = 18507
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1cbd5795d
+
+Time (s): cpu = 00:04:17 ; elapsed = 00:01:37 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9025 ; free virtual = 18507
+Phase 3 Detail Placement | Checksum: 1cbd5795d
+
+Time (s): cpu = 00:04:17 ; elapsed = 00:01:38 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9025 ; free virtual = 18507
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 20def49d2
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.189 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2326abbf6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 5478.047 ; gain = 0.000 ; free physical = 9023 ; free virtual = 18505
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 2326abbf6
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5478.047 ; gain = 0.000 ; free physical = 9024 ; free virtual = 18506
+Phase 4.1.1.1 BUFG Insertion | Checksum: 20def49d2
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:01:52 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9023 ; free virtual = 18506
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.234. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1dbc3256a
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:07 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9022 ; free virtual = 18504
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:07 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9022 ; free virtual = 18504
+Phase 4.1 Post Commit Optimization | Checksum: 1dbc3256a
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:07 . Memory (MB): peak = 5478.047 ; gain = 1263.562 ; free physical = 9022 ; free virtual = 18504
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8972 ; free virtual = 18455
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2cdc167d8
+
+Time (s): cpu = 00:05:41 ; elapsed = 00:02:13 . Memory (MB): peak = 5509.031 ; gain = 1294.547 ; free physical = 8971 ; free virtual = 18454
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2cdc167d8
+
+Time (s): cpu = 00:05:42 ; elapsed = 00:02:13 . Memory (MB): peak = 5509.031 ; gain = 1294.547 ; free physical = 8971 ; free virtual = 18454
+Phase 4.3 Placer Reporting | Checksum: 2cdc167d8
+
+Time (s): cpu = 00:05:42 ; elapsed = 00:02:13 . Memory (MB): peak = 5509.031 ; gain = 1294.547 ; free physical = 8971 ; free virtual = 18454
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8971 ; free virtual = 18454
+
+Time (s): cpu = 00:05:42 ; elapsed = 00:02:13 . Memory (MB): peak = 5509.031 ; gain = 1294.547 ; free physical = 8971 ; free virtual = 18454
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2eb6f371f
+
+Time (s): cpu = 00:05:42 ; elapsed = 00:02:14 . Memory (MB): peak = 5509.031 ; gain = 1294.547 ; free physical = 8971 ; free virtual = 18454
+Ending Placer Task | Checksum: 26c922cb2
+
+Time (s): cpu = 00:05:42 ; elapsed = 00:02:14 . Memory (MB): peak = 5509.031 ; gain = 1294.547 ; free physical = 8970 ; free virtual = 18453
+130 Infos, 151 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:05:47 ; elapsed = 00:02:15 . Memory (MB): peak = 5509.031 ; gain = 1407.664 ; free physical = 8970 ; free virtual = 18453
+INFO: [runtcl-4] Executing : report_io -file project_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.2 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8964 ; free virtual = 18448
+INFO: [runtcl-4] Executing : report_utilization -file project_1_wrapper_utilization_placed.rpt -pb project_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file project_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.26 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8953 ; free virtual = 18437
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.13 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8944 ; free virtual = 18448
+Wrote PlaceDB: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8876 ; free virtual = 18456
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8876 ; free virtual = 18456
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.2 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8875 ; free virtual = 18456
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.06 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8866 ; free virtual = 18456
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8862 ; free virtual = 18456
+Write Physdb Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 5509.031 ; gain = 0.000 ; free physical = 8862 ; free virtual = 18456
+INFO: [Common 17-1381] The checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 5533.043 ; gain = 24.012 ; free physical = 8927 ; free virtual = 18444
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:06 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8924 ; free virtual = 18442
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+139 Infos, 151 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:06 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8924 ; free virtual = 18442
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.11 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8914 ; free virtual = 18451
+Wrote PlaceDB: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8849 ; free virtual = 18461
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8849 ; free virtual = 18461
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.21 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8848 ; free virtual = 18462
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.06 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8838 ; free virtual = 18462
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8835 ; free virtual = 18461
+Write Physdb Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8835 ; free virtual = 18461
+INFO: [Common 17-1381] The checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 5533.043 ; gain = 0.000 ; free physical = 8897 ; free virtual = 18448
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 32 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: b50e045c ConstDB: 0 ShapeSum: c585e5e8 RouteDB: f1fe426e
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.39 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8892 ; free virtual = 18447
+Post Restoration Checksum: NetGraph: 92e115d | NumContArr: 69ed64cf | Constraints: 5e1b3aee | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 193dfabb7
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:05 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8891 ; free virtual = 18449
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 193dfabb7
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:05 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8890 ; free virtual = 18448
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 193dfabb7
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:05 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8890 ; free virtual = 18448
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 225be15ab
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:06 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8890 ; free virtual = 18449
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 14da178bd
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:10 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8889 ; free virtual = 18448
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.262  | TNS=0.000  | WHS=-0.189 | THS=-385.412|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: fbb9813e
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:21 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8889 ; free virtual = 18449
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.262  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 837b6585
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:21 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8890 ; free virtual = 18450
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 67387
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 57952
+  Number of Partially Routed Nets     = 9435
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 16321c1e0
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:22 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8891 ; free virtual = 18451
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 16321c1e0
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:22 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8891 ; free virtual = 18451
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 215b9e42d
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:26 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8889 ; free virtual = 18449
+Phase 3 Initial Routing | Checksum: 1dd2eef99
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:26 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8889 ; free virtual = 18449
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 16538
+ Number of Nodes with overlaps = 1859
+ Number of Nodes with overlaps = 263
+ Number of Nodes with overlaps = 68
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.214  | TNS=0.000  | WHS=-0.059 | THS=-1.447 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 210bb83a5
+
+Time (s): cpu = 00:10:31 ; elapsed = 00:06:35 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8751 ; free virtual = 18319
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 25ca73117
+
+Time (s): cpu = 00:10:32 ; elapsed = 00:06:35 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8751 ; free virtual = 18319
+Phase 4 Rip-up And Reroute | Checksum: 25ca73117
+
+Time (s): cpu = 00:10:32 ; elapsed = 00:06:35 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8751 ; free virtual = 18319
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1cbcde30b
+
+Time (s): cpu = 00:10:48 ; elapsed = 00:06:39 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8779 ; free virtual = 18347
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.214  | TNS=0.000  | WHS=-0.035 | THS=-0.177 |
+
+
+Phase 5.1.2 Update Timing
+Phase 5.1.2 Update Timing | Checksum: 1c8753a3e
+
+Time (s): cpu = 00:11:00 ; elapsed = 00:06:42 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8783 ; free virtual = 18351
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.214  | TNS=0.000  | WHS=-0.035 | THS=-0.177 |
+
+Phase 5.1 Delay CleanUp | Checksum: 1b1e472c3
+
+Time (s): cpu = 00:11:00 ; elapsed = 00:06:42 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8783 ; free virtual = 18351
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1b1e472c3
+
+Time (s): cpu = 00:11:00 ; elapsed = 00:06:42 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8783 ; free virtual = 18351
+Phase 5 Delay and Skew Optimization | Checksum: 1b1e472c3
+
+Time (s): cpu = 00:11:01 ; elapsed = 00:06:42 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8783 ; free virtual = 18351
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1e07c75fe
+
+Time (s): cpu = 00:11:13 ; elapsed = 00:06:45 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8784 ; free virtual = 18352
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.214  | TNS=0.000  | WHS=-0.035 | THS=-0.177 |
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 1aaafa193
+
+Time (s): cpu = 00:11:21 ; elapsed = 00:06:54 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8775 ; free virtual = 18343
+Phase 6.1 Hold Fix Iter | Checksum: 1aaafa193
+
+Time (s): cpu = 00:11:22 ; elapsed = 00:06:54 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8775 ; free virtual = 18343
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.214  | TNS=0.000  | WHS=-0.035 | THS=-0.177 |
+
+Phase 6.2 Additional Hold Fix | Checksum: 209eaa70c
+
+Time (s): cpu = 00:11:42 ; elapsed = 00:07:05 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8763 ; free virtual = 18331
+
+Phase 6.3 Non Free Resource Hold Fix Iter
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 6.3 Non Free Resource Hold Fix Iter | Checksum: 29d02dac5
+
+Time (s): cpu = 00:11:58 ; elapsed = 00:07:10 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8762 ; free virtual = 18331
+Phase 6 Post Hold Fix | Checksum: 29d02dac5
+
+Time (s): cpu = 00:11:58 ; elapsed = 00:07:10 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8762 ; free virtual = 18331
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 9.06637 %
+  Global Horizontal Routing Utilization  = 9.03262 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 29d02dac5
+
+Time (s): cpu = 00:11:59 ; elapsed = 00:07:10 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8762 ; free virtual = 18331
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 29d02dac5
+
+Time (s): cpu = 00:11:59 ; elapsed = 00:07:10 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8762 ; free virtual = 18331
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 29d02dac5
+
+Time (s): cpu = 00:12:03 ; elapsed = 00:07:13 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8761 ; free virtual = 18330
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 29d02dac5
+
+Time (s): cpu = 00:12:04 ; elapsed = 00:07:13 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8761 ; free virtual = 18330
+
+Phase 11 Post Router Timing
+
+Phase 11.1 Update Timing
+Phase 11.1 Update Timing | Checksum: 235fe9b4d
+
+Time (s): cpu = 00:12:16 ; elapsed = 00:07:16 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8781 ; free virtual = 18350
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.214  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 235fe9b4d
+
+Time (s): cpu = 00:12:16 ; elapsed = 00:07:16 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8781 ; free virtual = 18350
+Time taken to check if laguna hold fix is required (in secs): 0
+Skip PhysOpt in Router because non-negative WNS value: 2.13729e-10 .
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 12 Post-Route Event Processing
+Phase 12 Post-Route Event Processing | Checksum: 21f5fafb3
+
+Time (s): cpu = 00:12:38 ; elapsed = 00:07:21 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8780 ; free virtual = 18349
+Ending Routing Task | Checksum: 21f5fafb3
+
+Time (s): cpu = 00:12:40 ; elapsed = 00:07:22 . Memory (MB): peak = 5541.047 ; gain = 0.000 ; free physical = 8780 ; free virtual = 18349
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+157 Infos, 151 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:12:45 ; elapsed = 00:07:24 . Memory (MB): peak = 5541.047 ; gain = 8.004 ; free physical = 8779 ; free virtual = 18348
+INFO: [runtcl-4] Executing : report_drc -file project_1_wrapper_drc_routed.rpt -pb project_1_wrapper_drc_routed.pb -rpx project_1_wrapper_drc_routed.rpx
+Command: report_drc -file project_1_wrapper_drc_routed.rpt -pb project_1_wrapper_drc_routed.pb -rpx project_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file project_1_wrapper_methodology_drc_routed.rpt -pb project_1_wrapper_methodology_drc_routed.pb -rpx project_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file project_1_wrapper_methodology_drc_routed.rpt -pb project_1_wrapper_methodology_drc_routed.pb -rpx project_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:44 ; elapsed = 00:00:10 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8772 ; free virtual = 18341
+INFO: [runtcl-4] Executing : report_power -file project_1_wrapper_power_routed.rpt -pb project_1_wrapper_power_summary_routed.pb -rpx project_1_wrapper_power_routed.rpx
+Command: report_power -file project_1_wrapper_power_routed.rpt -pb project_1_wrapper_power_summary_routed.pb -rpx project_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+167 Infos, 152 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:32 ; elapsed = 00:00:10 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8769 ; free virtual = 18354
+INFO: [runtcl-4] Executing : report_route_status -file project_1_wrapper_route_status.rpt -pb project_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file project_1_wrapper_timing_summary_routed.rpt -pb project_1_wrapper_timing_summary_routed.pb -rpx project_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LVI, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file project_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file project_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file project_1_wrapper_bus_skew_routed.rpt -pb project_1_wrapper_bus_skew_routed.pb -rpx project_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LVI, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.12 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8748 ; free virtual = 18358
+Wrote PlaceDB: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8682 ; free virtual = 18368
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8682 ; free virtual = 18368
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.6 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8667 ; free virtual = 18369
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8658 ; free virtual = 18369
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8655 ; free virtual = 18369
+Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8655 ; free virtual = 18368
+INFO: [Common 17-1381] The checkpoint '/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 5613.066 ; gain = 0.000 ; free physical = 8732 ; free virtual = 18362
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  8 17:27:25 2024...

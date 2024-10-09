@@ -9,4 +9,49 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1 |
 # IP: bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==project_1_zynq_ultra_ps_e_0_0} -quiet] -quiet
 
-# XDC: /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/project_1_ooc.xdc
+# IP: bd/project_1/ip/project_1_dpu_concat_irq_0/project_1_dpu_concat_irq_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_dpu_concat_irq_0 || ORIG_REF_NAME==project_1_dpu_concat_irq_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_DPUCZDX8G_0 || ORIG_REF_NAME==project_1_DPUCZDX8G_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_dpu_clk_wiz_0 || ORIG_REF_NAME==project_1_dpu_clk_wiz_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_rst_gen_clk_0 || ORIG_REF_NAME==project_1_rst_gen_clk_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_rst_gen_clk_dsp_0 || ORIG_REF_NAME==project_1_rst_gen_clk_dsp_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_dpu_intc_M_AXI_HP0_FPD_0/project_1_dpu_intc_M_AXI_HP0_FPD_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_dpu_intc_M_AXI_HP0_FPD_0 || ORIG_REF_NAME==project_1_dpu_intc_M_AXI_HP0_FPD_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_dpu_intc_M_AXI_HP1_FPD_0/project_1_dpu_intc_M_AXI_HP1_FPD_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_dpu_intc_M_AXI_HP1_FPD_0 || ORIG_REF_NAME==project_1_dpu_intc_M_AXI_HP1_FPD_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_dpu_intc_M_AXI_LPD_0/project_1_dpu_intc_M_AXI_LPD_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_dpu_intc_M_AXI_LPD_0 || ORIG_REF_NAME==project_1_dpu_intc_M_AXI_LPD_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_dpu_concat_irq_inner_0/project_1_dpu_concat_irq_inner_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_dpu_concat_irq_inner_0 || ORIG_REF_NAME==project_1_dpu_concat_irq_inner_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_rst_gen_ghp_0 || ORIG_REF_NAME==project_1_rst_gen_ghp_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_rst_gen_reg_0 || ORIG_REF_NAME==project_1_rst_gen_reg_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_auto_cc_0 || ORIG_REF_NAME==project_1_auto_cc_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_auto_cc_1 || ORIG_REF_NAME==project_1_auto_cc_1} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_auto_us_0 || ORIG_REF_NAME==project_1_auto_us_0} -quiet] -quiet
+
+# IP: bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==project_1_auto_cc_2 || ORIG_REF_NAME==project_1_auto_cc_2} -quiet] -quiet
+
+# XDC: /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/project_1_ooc.xdc

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/project_1_wrapper.tcl"
+  variable script "/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/synth_1/project_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,13 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param power.enableCarry8RouteBelPower 1
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param chipscope.maxJobs 3
-set_param power.BramSDPPropagationFix 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-9949-51-0B10160-01/incrSyn
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.enableLutRouteBelPower 1
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-586841-51-0B10160-01/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -86,20 +81,53 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.cache/wt [current_project]
-set_property parent.project_path /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.xpr [current_project]
+set_property webtalk.parent_dir /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.cache/wt [current_project]
+set_property parent.project_path /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:k26i:part0:1.4 [current_project]
-set_property ip_output_repo /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.cache/ip [current_project]
+set_property ip_repo_paths /home/tikao/K26Based/Awl_K26/hardware/DPUCZDX8G/dpu_ip/DPUCZDX8G_v4_0_0 [current_project]
+update_ip_catalog
+set_property ip_output_repo /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/sources_1/imports/hdl/project_1_wrapper.v
-add_files /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/sources_1/bd/project_1/project_1.bd
-set_property used_in_implementation false [get_files -all /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/project_1_ooc.xdc]
+read_verilog -library xil_defaultlib /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/sources_1/imports/hdl/project_1_wrapper.v
+add_files /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/sources_1/bd/project_1/project_1.bd
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0.xdc]
+set_property used_in_synthesis false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_DPUCZDX8G_0/project_1_DPUCZDX8G_0_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_dpu_clk_wiz_0/project_1_dpu_clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_0/project_1_rst_gen_clk_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_clk_dsp_0/project_1_rst_gen_clk_dsp_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_ghp_0/project_1_rst_gen_ghp_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_rst_gen_reg_0/project_1_rst_gen_reg_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_0/project_1_auto_cc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_1/project_1_auto_cc_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_cc_2/project_1_auto_cc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/project_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,14 +138,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc
-set_property used_in_implementation false [get_files /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc]
+read_xdc /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc
+set_property used_in_implementation false [get_files /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/constrs_1/imports/xdc/default.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/utils_1/imports/synth_1/project_1_wrapper.dcp
+read_checkpoint -auto_incremental -incremental /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.srcs/utils_1/imports/synth_1/project_1_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

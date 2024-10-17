@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
--- Date        : Thu Oct 17 13:57:28 2024
+-- Date        : Thu Oct 17 14:36:58 2024
 -- Host        : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_stub.vhdl

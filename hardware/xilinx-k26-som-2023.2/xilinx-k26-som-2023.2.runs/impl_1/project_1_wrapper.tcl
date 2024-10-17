@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper.tcl"
+  variable script "/home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.runs/impl_1/project_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -128,13 +128,14 @@ set rc [catch {
   set_param power.enableCarry8RouteBelPower 1
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
   set_param power.BramSDPPropagationFix 1
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-9949-51-0B10160-01/incrSyn
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-238276-51-0B10160-01/incrSyn
   set_param power.enableUnconnectedCarry8PinPower 1
   set_param power.enableLutRouteBelPower 1
   set_param runs.launchOptions { -jobs 6  }
   open_checkpoint project_1_wrapper_routed.dcp
-  set_property webtalk.parent_dir /home/tikao/K26Based/plnx2023_2_k26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.cache/wt [current_project]
 set_property TOP project_1_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

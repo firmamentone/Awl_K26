@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct  1 14:28:42 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 17 13:57:35 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:k26i:part0:1.4" DEVICE="xck26" NAME="project_1" PACKAGE="sfvc784" SPEEDGRADE="-2LVI"/>
 
@@ -39,7 +39,7 @@
         <PARAMETER NAME="C_SAXIGP5_DATA_WIDTH" VALUE="128"/>
         <PARAMETER NAME="C_SAXIGP6_DATA_WIDTH" VALUE="128"/>
         <PARAMETER NAME="C_SD0_INTERNAL_BUS_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="C_SD1_INTERNAL_BUS_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_SD1_INTERNAL_BUS_WIDTH" VALUE="4"/>
         <PARAMETER NAME="C_TRACE_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_TRACE_PIPELINE_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_USE_DEBUG_TEST" VALUE="0"/>
@@ -297,7 +297,7 @@
         <PARAMETER NAME="PSU_MIO_42_POLARITY" VALUE="Default"/>
         <PARAMETER NAME="PSU_MIO_42_PULLUPDOWN" VALUE="pullup"/>
         <PARAMETER NAME="PSU_MIO_42_SLEW" VALUE="slow"/>
-        <PARAMETER NAME="PSU_MIO_43_DIRECTION" VALUE="inout"/>
+        <PARAMETER NAME="PSU_MIO_43_DIRECTION" VALUE="out"/>
         <PARAMETER NAME="PSU_MIO_43_DRIVE_STRENGTH" VALUE="4"/>
         <PARAMETER NAME="PSU_MIO_43_INPUT_TYPE" VALUE="cmos"/>
         <PARAMETER NAME="PSU_MIO_43_POLARITY" VALUE="Default"/>
@@ -309,7 +309,7 @@
         <PARAMETER NAME="PSU_MIO_44_POLARITY" VALUE="Default"/>
         <PARAMETER NAME="PSU_MIO_44_PULLUPDOWN" VALUE="pullup"/>
         <PARAMETER NAME="PSU_MIO_44_SLEW" VALUE="slow"/>
-        <PARAMETER NAME="PSU_MIO_45_DIRECTION" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PSU_MIO_45_DIRECTION" VALUE="in"/>
         <PARAMETER NAME="PSU_MIO_45_DRIVE_STRENGTH" VALUE="12"/>
         <PARAMETER NAME="PSU_MIO_45_INPUT_TYPE" VALUE="cmos"/>
         <PARAMETER NAME="PSU_MIO_45_POLARITY" VALUE="Default"/>
@@ -543,11 +543,11 @@
         <PARAMETER NAME="PSU_MIO_9_POLARITY" VALUE="Default"/>
         <PARAMETER NAME="PSU_MIO_9_PULLUPDOWN" VALUE="pullup"/>
         <PARAMETER NAME="PSU_MIO_9_SLEW" VALUE="slow"/>
-        <PARAMETER NAME="PSU_MIO_TREE_PERIPHERALS" VALUE="Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#SPI 1#GPIO0 MIO#GPIO0 MIO#SPI 1#SPI 1#SPI 1#GPIO0 MIO#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#I2C 1#I2C 1#PMU GPI 0#DPAUX#DPAUX#DPAUX#DPAUX#PMU GPI 5####PMU GPO 3#UART 1#UART 1##SD 1#SD 1#SD 1#SD 1####SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0##############"/>
-        <PARAMETER NAME="PSU_MIO_TREE_SIGNALS" VALUE="sclk_out#miso_mo1#mo2#mo3#mosi_mi0#n_ss_out#sclk_out#gpio0[7]#gpio0[8]#n_ss_out[0]#miso#mosi#gpio0[12]#sdio0_data_out[0]#sdio0_data_out[1]#sdio0_data_out[2]#sdio0_data_out[3]#sdio0_data_out[4]#sdio0_data_out[5]#sdio0_data_out[6]#sdio0_data_out[7]#sdio0_cmd_out#sdio0_clk_out#sdio0_bus_pow#scl_out#sda_out#gpi[0]#dp_aux_data_out#dp_hot_plug_detect#dp_aux_data_oe#dp_aux_data_in#gpi[5]####gpo[3]#txd#rxd##sdio1_data_out[4]#sdio1_data_out[5]#sdio1_data_out[6]#sdio1_data_out[7]####sdio1_data_out[0]#sdio1_data_out[1]#sdio1_data_out[2]#sdio1_data_out[3]#sdio1_cmd_out#sdio1_clk_out#ulpi_clk_in#ulpi_dir#ulpi_tx_data[2]#ulpi_nxt#ulpi_tx_data[0]#ulpi_tx_data[1]#ulpi_stp#ulpi_tx_data[3]#ulpi_tx_data[4]#ulpi_tx_data[5]#ulpi_tx_data[6]#ulpi_tx_data[7]##############"/>
+        <PARAMETER NAME="PSU_MIO_TREE_PERIPHERALS" VALUE="Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#SPI 1#GPIO0 MIO#GPIO0 MIO#SPI 1#SPI 1#SPI 1#GPIO0 MIO#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#I2C 1#I2C 1#PMU GPI 0#DPAUX#DPAUX#DPAUX#DPAUX#PMU GPI 5####PMU GPO 3#UART 1#UART 1######SD 1##SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0##############"/>
+        <PARAMETER NAME="PSU_MIO_TREE_SIGNALS" VALUE="sclk_out#miso_mo1#mo2#mo3#mosi_mi0#n_ss_out#sclk_out#gpio0[7]#gpio0[8]#n_ss_out[0]#miso#mosi#gpio0[12]#sdio0_data_out[0]#sdio0_data_out[1]#sdio0_data_out[2]#sdio0_data_out[3]#sdio0_data_out[4]#sdio0_data_out[5]#sdio0_data_out[6]#sdio0_data_out[7]#sdio0_cmd_out#sdio0_clk_out#sdio0_bus_pow#scl_out#sda_out#gpi[0]#dp_aux_data_out#dp_hot_plug_detect#dp_aux_data_oe#dp_aux_data_in#gpi[5]####gpo[3]#txd#rxd######sdio1_bus_pow##sdio1_cd_n#sdio1_data_out[0]#sdio1_data_out[1]#sdio1_data_out[2]#sdio1_data_out[3]#sdio1_cmd_out#sdio1_clk_out#ulpi_clk_in#ulpi_dir#ulpi_tx_data[2]#ulpi_nxt#ulpi_tx_data[0]#ulpi_tx_data[1]#ulpi_stp#ulpi_tx_data[3]#ulpi_tx_data[4]#ulpi_tx_data[5]#ulpi_tx_data[6]#ulpi_tx_data[7]##############"/>
         <PARAMETER NAME="PSU_PERIPHERAL_BOARD_PRESET"/>
         <PARAMETER NAME="PSU_SD0_INTERNAL_BUS_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="PSU_SD1_INTERNAL_BUS_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="PSU_SD1_INTERNAL_BUS_WIDTH" VALUE="4"/>
         <PARAMETER NAME="PSU_SMC_CYCLE_T0" VALUE="NA"/>
         <PARAMETER NAME="PSU_SMC_CYCLE_T1" VALUE="NA"/>
         <PARAMETER NAME="PSU_SMC_CYCLE_T2" VALUE="NA"/>
@@ -1546,23 +1546,23 @@
         <PARAMETER NAME="PSU__SD0__SLOT_TYPE" VALUE="eMMC"/>
         <PARAMETER NAME="PSU__SD1_COHERENCY" VALUE="0"/>
         <PARAMETER NAME="PSU__SD1_ROUTE_THROUGH_FPD" VALUE="0"/>
-        <PARAMETER NAME="PSU__SD1__CLK_100_SDR_OTAP_DLY" VALUE="0x3"/>
-        <PARAMETER NAME="PSU__SD1__CLK_200_SDR_OTAP_DLY" VALUE="0x3"/>
-        <PARAMETER NAME="PSU__SD1__CLK_50_DDR_ITAP_DLY" VALUE="0x3D"/>
-        <PARAMETER NAME="PSU__SD1__CLK_50_DDR_OTAP_DLY" VALUE="0x4"/>
+        <PARAMETER NAME="PSU__SD1__CLK_100_SDR_OTAP_DLY" VALUE="0x0"/>
+        <PARAMETER NAME="PSU__SD1__CLK_200_SDR_OTAP_DLY" VALUE="0x0"/>
+        <PARAMETER NAME="PSU__SD1__CLK_50_DDR_ITAP_DLY" VALUE="0x0"/>
+        <PARAMETER NAME="PSU__SD1__CLK_50_DDR_OTAP_DLY" VALUE="0x0"/>
         <PARAMETER NAME="PSU__SD1__CLK_50_SDR_ITAP_DLY" VALUE="0x15"/>
         <PARAMETER NAME="PSU__SD1__CLK_50_SDR_OTAP_DLY" VALUE="0x5"/>
-        <PARAMETER NAME="PSU__SD1__DATA_TRANSFER_MODE" VALUE="8Bit"/>
-        <PARAMETER NAME="PSU__SD1__GRP_CD__ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PSU__SD1__GRP_CD__IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PSU__SD1__GRP_POW__ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PSU__SD1__GRP_POW__IO" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PSU__SD1__DATA_TRANSFER_MODE" VALUE="4Bit"/>
+        <PARAMETER NAME="PSU__SD1__GRP_CD__ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PSU__SD1__GRP_CD__IO" VALUE="MIO 45"/>
+        <PARAMETER NAME="PSU__SD1__GRP_POW__ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PSU__SD1__GRP_POW__IO" VALUE="MIO 43"/>
         <PARAMETER NAME="PSU__SD1__GRP_WP__ENABLE" VALUE="0"/>
         <PARAMETER NAME="PSU__SD1__GRP_WP__IO" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PSU__SD1__PERIPHERAL__ENABLE" VALUE="1"/>
-        <PARAMETER NAME="PSU__SD1__PERIPHERAL__IO" VALUE="MIO 39 .. 51"/>
+        <PARAMETER NAME="PSU__SD1__PERIPHERAL__IO" VALUE="MIO 46 .. 51"/>
         <PARAMETER NAME="PSU__SD1__RESET__ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PSU__SD1__SLOT_TYPE" VALUE="SD 3.0"/>
+        <PARAMETER NAME="PSU__SD1__SLOT_TYPE" VALUE="SD 2.0"/>
         <PARAMETER NAME="PSU__SPI0_LOOP_SPI1__ENABLE" VALUE="0"/>
         <PARAMETER NAME="PSU__SPI0__GRP_SS0__ENABLE" VALUE="0"/>
         <PARAMETER NAME="PSU__SPI0__GRP_SS0__IO" VALUE="&lt;Select>"/>

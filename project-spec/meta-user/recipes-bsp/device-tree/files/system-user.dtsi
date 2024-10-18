@@ -87,7 +87,22 @@
     phys = <&psgtr 2 PHY_TYPE_USB3 0 1>;
     maximum-speed = "super-speed";
 };
-
+&sdhci1 { /* on CC with tuned parameters */
+	status = "okay";
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_sdhci1_default>;
+	/*
+	 * SD 3.0 requires level shifter and this property
+	 * should be removed if the board has level shifter and
+	 * need to work in UHS mode
+	 */
+	no-1-8-v;
+	disable-wp;
+	xlnx,mio-bank = <1>;
+	clk-phase-sd-hs = <126>, <60>;
+	clk-phase-uhs-sdr25 = <120>, <60>;
+	clk-phase-uhs-ddr50 = <126>, <48>;
+};
 &pinctrl0 { /* required by spec */
 	status = "okay";
 
@@ -210,6 +225,32 @@
 			function = "usb0";
 		};
 	};
+	pinctrl_sdhci1_default: sdhci1-default {
+		conf {
+			groups = "sdio1_0_grp";
+			slew-rate = <SLEW_RATE_SLOW>;
+			power-source = <IO_STANDARD_LVCMOS18>;
+			bias-disable;
+		};
+
+		conf-cd {
+			groups = "sdio1_cd_0_grp";
+			bias-high-impedance;
+			bias-pull-up;
+			slew-rate = <SLEW_RATE_SLOW>;
+			power-source = <IO_STANDARD_LVCMOS18>;
+		};
+
+		mux-cd {
+			groups = "sdio1_cd_0_grp";
+			function = "sdio1_cd";
+		};
+
+		mux {
+			groups = "sdio1_0_grp";
+			function = "sdio1";
+		};
+	};	
 
 
 };

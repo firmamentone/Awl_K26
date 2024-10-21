@@ -1,20 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="tikao" Host="51-0B10160-01" Pid="460591" HostCore="12" HostMemory="32727684">
+    <Process Command="vivado" Owner="tikao" Host="51-0B10160-01" Pid="20371" HostCore="12" HostMemory="32727688">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="tikao" Host="51-0B10160-01" Pid="461304" HostCore="12" HostMemory="32727684">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="tikao" Host="51-0B10160-01" Pid="534225" HostCore="12" HostMemory="32727684">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="tikao" Host="51-0B10160-01" Pid="535170" HostCore="12" HostMemory="32727684">
+    <Process Command="vivado" Owner="tikao" Host="51-0B10160-01" Pid="21450" HostCore="12" HostMemory="32727688">
     </Process>
 </ProcessHandle>

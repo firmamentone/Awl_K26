@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Thu Oct 17 14:39:08 2024
+| Date             : Mon Oct 21 10:12:37 2024
 | Host             : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 | Command          : report_power -file project_1_wrapper_power_routed.rpt -pb project_1_wrapper_power_summary_routed.pb -rpx project_1_wrapper_power_routed.rpx
 | Design           : project_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.828        |
+| Total On-Chip Power (W)  | 2.988        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.527        |
-| Device Static (W)        | 0.301        |
+| Dynamic (W)              | 2.686        |
+| Device Static (W)        | 0.302        |
 | Effective TJA (C/W)      | 2.3          |
-| Max Ambient (C)          | 93.4         |
-| Junction Temperature (C) | 31.6         |
+| Max Ambient (C)          | 93.1         |
+| Junction Temperature (C) | 31.9         |
 | Confidence Level         | High         |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -55,11 +55,11 @@ Table of Contents
 | Clocks       |     0.000 |        4 |       --- |             --- |
 | CLB Logic    |     0.000 |        4 |       --- |             --- |
 |   Others     |     0.000 |        4 |       --- |             --- |
-| PS8          |     2.527 |        1 |       --- |             --- |
-| Static Power |     0.301 |          |           |                 |
+| PS8          |     2.686 |        1 |       --- |             --- |
+| Static Power |     0.302 |          |           |                 |
 |   PS Static  |     0.000 |          |           |                 |
-|   PL Static  |     0.301 |          |           |                 |
-| Total        |     2.828 |          |           |                 |
+|   PL Static  |     0.302 |          |           |                 |
+| Total        |     2.988 |          |           |                 |
 +--------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,7 +69,7 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.720 |     0.087 |       0.000 |      0.087 |       NA    | Unspecified | NA         |
+| Vccint          |       0.720 |     0.089 |       0.000 |      0.089 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.036 |       0.000 |      0.036 |       NA    | Unspecified | NA         |
 | Vccbram         |       0.850 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.075 |       0.000 |      0.075 |       NA    | Unspecified | NA         |
@@ -82,12 +82,12 @@ Table of Contents
 | Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
-| VCC_PSINTFP     |       0.850 |     0.958 |       0.958 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP     |       0.850 |     1.057 |       1.057 |      0.000 |       NA    | Unspecified | NA         |
 | VCC_PSINTLP     |       0.850 |     0.249 |       0.249 |      0.000 |       NA    | Unspecified | NA         |
-| VPS_MGTRAVCC    |       0.850 |     0.067 |       0.067 |      0.000 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVCC    |       0.850 |     0.138 |       0.138 |      0.000 |       NA    | Unspecified | NA         |
 | VCC_PSINTFP_DDR |       0.850 |     0.726 |       0.726 |      0.000 |       NA    | Unspecified | NA         |
 | VCC_PSPLL       |       1.200 |     0.071 |       0.071 |      0.000 |       NA    | Unspecified | NA         |
-| VPS_MGTRAVTT    |       1.800 |     0.017 |       0.017 |      0.000 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVTT    |       1.800 |     0.025 |       0.025 |      0.000 |       NA    | Unspecified | NA         |
 | VCCO_PSDDR_504  |       1.200 |     0.592 |       0.592 |      0.000 |       NA    | Unspecified | NA         |
 | VCC_PSAUX       |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | VCC_PSBATT      |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -154,10 +154,10 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| project_1_wrapper     |     2.527 |
-|   project_1_i         |     2.527 |
-|     zynq_ultra_ps_e_0 |     2.527 |
-|       inst            |     2.527 |
+| project_1_wrapper     |     2.686 |
+|   project_1_i         |     2.686 |
+|     zynq_ultra_ps_e_0 |     2.686 |
+|       inst            |     2.686 |
 +-----------------------+-----------+
 
 

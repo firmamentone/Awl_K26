@@ -128,9 +128,8 @@ set rc [catch {
   set_param power.enableCarry8RouteBelPower 1
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 3
-  set_param xicom.use_bs_reader 1
   set_param power.BramSDPPropagationFix 1
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-238276-51-0B10160-01/incrSyn
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-14960-51-0B10160-01/incrSyn
   set_param power.enableUnconnectedCarry8PinPower 1
   set_param power.enableLutRouteBelPower 1
   set_param runs.launchOptions { -jobs 6  }

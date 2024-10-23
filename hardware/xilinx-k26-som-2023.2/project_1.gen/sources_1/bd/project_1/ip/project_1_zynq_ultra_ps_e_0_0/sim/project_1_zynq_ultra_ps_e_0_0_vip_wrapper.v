@@ -58,11 +58,13 @@
 `timescale 1ns/1ps
 
 module project_1_zynq_ultra_ps_e_0_0 (
+emio_enet0_enet_tsu_timer_cnt, 
 pl_ps_irq0, 
 pl_resetn0, 
 pl_clk0, 
 pl_clk1 
 );
+output [93 : 0] emio_enet0_enet_tsu_timer_cnt;
 input [0 : 0] pl_ps_irq0;
 output pl_resetn0;
 output pl_clk0;

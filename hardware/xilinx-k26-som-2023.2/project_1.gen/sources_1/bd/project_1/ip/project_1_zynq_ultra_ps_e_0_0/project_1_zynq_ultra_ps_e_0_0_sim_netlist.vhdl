@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
--- Date        : Mon Oct 21 10:06:37 2024
+-- Date        : Tue Oct 22 10:16:02 2024
 -- Host        : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_sim_netlist.vhdl
@@ -1676,8 +1676,12 @@ entity project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e is
  "PS_POR_B, , , IN, PS_POR_B_503, LVCMOS18, 12, FAST, , PS_MIO_LVCMOS18_F_12,,  " & LF &
  "PS_PROG_B, , , IN, PS_PROG_B_503, LVCMOS18, 12, FAST, , PS_MIO_LVCMOS18_F_12,,  " & LF &
  "PS_SRST_B, , , IN, PS_SRST_B_503, LVCMOS18, 12, FAST, , PS_MIO_LVCMOS18_F_12,,  " & LF &
- "SATA1_MGTREFCLK1N, , , IN, PS_MGTREFCLK1N_505, , , , , ,,  " & LF &
- "SATA1_MGTREFCLK1P, , , IN, PS_MGTREFCLK1P_505, , , , , ,,  " & LF &
+ "GEM0_MGTRRXN0, , , IN, PS_MGTRRXN0_505, , , , , ,,  " & LF &
+ "GEM0_MGTRRXP0, , , IN, PS_MGTRRXP0_505, , , , , ,,  " & LF &
+ "GEM0_MGTRTXN0, , , OUT, PS_MGTRTXN0_505, , , , , ,,  " & LF &
+ "GEM0_MGTRTXP0, , , OUT, PS_MGTRTXP0_505, , , , , ,,  " & LF &
+ "SATA1_GEM0_MGTREFCLK1N, , , IN, PS_MGTREFCLK1N_505, , , , , ,,  " & LF &
+ "SATA1_GEM0_MGTREFCLK1P, , , IN, PS_MGTREFCLK1P_505, , , , , ,,  " & LF &
  "DP0_MGTRRXN1, , , IN, PS_MGTRRXN1_505, , , , , ,,  " & LF &
  "DP0_MGTRRXP1, , , IN, PS_MGTRRXP1_505, , , , , ,,  " & LF &
  "DP0_MGTRTXN1, , , OUT, PS_MGTRTXN1_505, , , , , ,,  " & LF &
@@ -1815,7 +1819,7 @@ entity project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e is
   attribute PSS_JITTER : string;
   attribute PSS_JITTER of project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e : entity is "<PSS_EXTERNAL_CLOCKS><EXTERNAL_CLOCK name={PLCLK[0]} clock_external_divide={15} vco_name={IOPLL} vco_freq={2999.970} vco_internal_divide={2}/><EXTERNAL_CLOCK name={PLCLK[1]} clock_external_divide={15} vco_name={IOPLL} vco_freq={2999.970} vco_internal_divide={2}/></PSS_EXTERNAL_CLOCKS>";
   attribute PSS_POWER : string;
-  attribute PSS_POWER of project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e : entity is "<BLOCKTYPE name={PS8}> <PS8><FPD><PROCESSSORS><PROCESSOR name={Cortex A-53} numCores={4} L2Cache={Enable} clockFreq={1333.333008} load={0.5}/><PROCESSOR name={GPU Mali-400 MP} numCores={2} clockFreq={499.994995} load={0.5} /></PROCESSSORS><PLLS><PLL domain={APU} vco={2666.640} /><PLL domain={DDR} vco={2133.312} /><PLL domain={Video} vco={2999.970} /></PLLS><MEMORY memType={DDR4} dataWidth={8} clockFreq={1066.656} readRate={0.5} writeRate={0.5} cmdAddressActivity={0.5} /><SERDES><GT name={PCIe} standard={} lanes={} usageRate={0.5} /><GT name={SATA} standard={SATA3} lanes={1} usageRate={0.5} /><GT name={Display Port} standard={SVGA-60 (800x600)} lanes={1} usageRate={0.5} />clockFreq={60} /><GT name={USB3} standard={USB3.0} lanes={1}usageRate={0.5} /><GT name={SGMII} standard={SGMII} lanes={0} usageRate={0.5} /></SERDES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><FPINTERCONNECT clockFreq={533.328003} Bandwidth={Low} /></FPD><LPD><PROCESSSORS><PROCESSOR name={Cortex R-5} usage={Enable} TCM={Enable} OCM={Enable} clockFreq={533.328003} load={0.5}/></PROCESSSORS><PLLS><PLL domain={IO} vco={2999.970} /><PLL domain={RPLL} vco={2133.312} /></PLLS><CSUPMU><Unit name={CSU} usageRate={0.5} clockFreq={180} /><Unit name={PMU} usageRate={0.5} clockFreq={180} /></CSUPMU><GPIO><Bank ioBank={VCC_PSIO0} number={3} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO1} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO2} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO3} number={16} io_standard={LVCMOS 1.8V} /></GPIO><IOINTERFACES> <IO name={QSPI} io_standard={} ioBank={VCC_PSIO0} clockFreq={124.998749} inputs={0} outputs={2} inouts={4} usageRate={0.5}/><IO name={NAND 3.1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={USB0} io_standard={} ioBank={VCC_PSIO2} clockFreq={249.997498} inputs={3} outputs={1} inouts={8} usageRate={0.5}/><IO name={USB1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth3} io_standard={} ioBank={VCC_PSIO2} clockFreq={124.998749} inputs={6} outputs={6} inouts={0} usageRate={0.5}/><IO name={GPIO 0} io_standard={} ioBank={VCC_PSIO0} clockFreq={1} inputs={0} outputs={0} inouts={3} usageRate={0.5}/><IO name={GPIO 1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 3} io_standard={} ioBank={VCC_PSIO3} clockFreq={1} inputs={} outputs={} inouts={16} usageRate={0.5}/><IO name={UART0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={UART1} io_standard={} ioBank={VCC_PSIO1} clockFreq={99.999001} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={I2C0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={I2C1} io_standard={} ioBank={VCC_PSIO0} clockFreq={99.999001} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={SPI0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SPI1} io_standard={} ioBank={VCC_PSIO0} clockFreq={187.498123} inputs={0} outputs={0} inouts={4} usageRate={0.5}/><IO name={CAN0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SD0} io_standard={} ioBank={VCC_PSIO0} clockFreq={187.498123} inputs={0} outputs={2} inouts={9} usageRate={0.5}/><IO name={SD1} io_standard={} ioBank={VCC_PSIO1} clockFreq={187.498123} inputs={1} outputs={2} inouts={5} usageRate={0.5}/><IO name={Trace} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={TTC0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC2} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC3} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={PJTAG} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={DPAUX} io_standard={} ioBank={VCC_PSIO1} clockFreq={} inputs={2} outputs={2} inouts={0} usageRate={0.5}/><IO name={WDT0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={WDT1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/></IOINTERFACES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><LPINTERCONNECT clockFreq={499.994995} Bandwidth={High} /></LPD></PS8></BLOCKTYPE>/>";
+  attribute PSS_POWER of project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e : entity is "<BLOCKTYPE name={PS8}> <PS8><FPD><PROCESSSORS><PROCESSOR name={Cortex A-53} numCores={4} L2Cache={Enable} clockFreq={1333.333008} load={0.5}/><PROCESSOR name={GPU Mali-400 MP} numCores={2} clockFreq={499.994995} load={0.5} /></PROCESSSORS><PLLS><PLL domain={APU} vco={2666.640} /><PLL domain={DDR} vco={2133.312} /><PLL domain={Video} vco={2999.970} /></PLLS><MEMORY memType={DDR4} dataWidth={8} clockFreq={1066.656} readRate={0.5} writeRate={0.5} cmdAddressActivity={0.5} /><SERDES><GT name={PCIe} standard={} lanes={} usageRate={0.5} /><GT name={SATA} standard={SATA3} lanes={1} usageRate={0.5} /><GT name={Display Port} standard={SVGA-60 (800x600)} lanes={1} usageRate={0.5} />clockFreq={60} /><GT name={USB3} standard={USB3.0} lanes={1}usageRate={0.5} /><GT name={SGMII} standard={SGMII} lanes={1} usageRate={0.5} /></SERDES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><FPINTERCONNECT clockFreq={533.328003} Bandwidth={Low} /></FPD><LPD><PROCESSSORS><PROCESSOR name={Cortex R-5} usage={Enable} TCM={Enable} OCM={Enable} clockFreq={533.328003} load={0.5}/></PROCESSSORS><PLLS><PLL domain={IO} vco={2999.970} /><PLL domain={RPLL} vco={2133.312} /></PLLS><CSUPMU><Unit name={CSU} usageRate={0.5} clockFreq={180} /><Unit name={PMU} usageRate={0.5} clockFreq={180} /></CSUPMU><GPIO><Bank ioBank={VCC_PSIO0} number={3} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO1} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO2} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO3} number={16} io_standard={LVCMOS 1.8V} /></GPIO><IOINTERFACES> <IO name={QSPI} io_standard={} ioBank={VCC_PSIO0} clockFreq={124.998749} inputs={0} outputs={2} inouts={4} usageRate={0.5}/><IO name={NAND 3.1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={USB0} io_standard={} ioBank={VCC_PSIO2} clockFreq={249.997498} inputs={3} outputs={1} inouts={8} usageRate={0.5}/><IO name={USB1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth0} io_standard={} ioBank={} clockFreq={124.998749} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={GigabitEth1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth3} io_standard={} ioBank={VCC_PSIO2} clockFreq={124.998749} inputs={6} outputs={6} inouts={0} usageRate={0.5}/><IO name={GPIO 0} io_standard={} ioBank={VCC_PSIO0} clockFreq={1} inputs={0} outputs={0} inouts={3} usageRate={0.5}/><IO name={GPIO 1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 3} io_standard={} ioBank={VCC_PSIO3} clockFreq={1} inputs={} outputs={} inouts={16} usageRate={0.5}/><IO name={UART0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={UART1} io_standard={} ioBank={VCC_PSIO1} clockFreq={99.999001} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={I2C0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={I2C1} io_standard={} ioBank={VCC_PSIO0} clockFreq={99.999001} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={SPI0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SPI1} io_standard={} ioBank={VCC_PSIO0} clockFreq={187.498123} inputs={0} outputs={0} inouts={4} usageRate={0.5}/><IO name={CAN0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SD0} io_standard={} ioBank={VCC_PSIO0} clockFreq={187.498123} inputs={0} outputs={2} inouts={9} usageRate={0.5}/><IO name={SD1} io_standard={} ioBank={VCC_PSIO1} clockFreq={187.498123} inputs={1} outputs={2} inouts={5} usageRate={0.5}/><IO name={Trace} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={TTC0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC2} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC3} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={PJTAG} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={DPAUX} io_standard={} ioBank={VCC_PSIO1} clockFreq={} inputs={2} outputs={2} inouts={0} usageRate={0.5}/><IO name={WDT0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={WDT1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/></IOINTERFACES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><LPINTERCONNECT clockFreq={499.994995} Bandwidth={High} /></LPD></PS8></BLOCKTYPE>/>";
 end project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e;
 
 architecture STRUCTURE of project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e is
@@ -4441,110 +4445,16 @@ architecture STRUCTURE of project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_z
   signal PS8_i_n_3443 : STD_LOGIC;
   signal PS8_i_n_3444 : STD_LOGIC;
   signal PS8_i_n_3445 : STD_LOGIC;
-  signal PS8_i_n_3446 : STD_LOGIC;
-  signal PS8_i_n_3447 : STD_LOGIC;
-  signal PS8_i_n_3448 : STD_LOGIC;
-  signal PS8_i_n_3449 : STD_LOGIC;
   signal PS8_i_n_345 : STD_LOGIC;
-  signal PS8_i_n_3450 : STD_LOGIC;
-  signal PS8_i_n_3451 : STD_LOGIC;
-  signal PS8_i_n_3452 : STD_LOGIC;
-  signal PS8_i_n_3453 : STD_LOGIC;
-  signal PS8_i_n_3454 : STD_LOGIC;
-  signal PS8_i_n_3455 : STD_LOGIC;
-  signal PS8_i_n_3456 : STD_LOGIC;
-  signal PS8_i_n_3457 : STD_LOGIC;
-  signal PS8_i_n_3458 : STD_LOGIC;
-  signal PS8_i_n_3459 : STD_LOGIC;
   signal PS8_i_n_346 : STD_LOGIC;
-  signal PS8_i_n_3460 : STD_LOGIC;
-  signal PS8_i_n_3461 : STD_LOGIC;
-  signal PS8_i_n_3462 : STD_LOGIC;
-  signal PS8_i_n_3463 : STD_LOGIC;
-  signal PS8_i_n_3464 : STD_LOGIC;
-  signal PS8_i_n_3465 : STD_LOGIC;
-  signal PS8_i_n_3466 : STD_LOGIC;
-  signal PS8_i_n_3467 : STD_LOGIC;
-  signal PS8_i_n_3468 : STD_LOGIC;
-  signal PS8_i_n_3469 : STD_LOGIC;
   signal PS8_i_n_347 : STD_LOGIC;
-  signal PS8_i_n_3470 : STD_LOGIC;
-  signal PS8_i_n_3471 : STD_LOGIC;
-  signal PS8_i_n_3472 : STD_LOGIC;
-  signal PS8_i_n_3473 : STD_LOGIC;
-  signal PS8_i_n_3474 : STD_LOGIC;
-  signal PS8_i_n_3475 : STD_LOGIC;
-  signal PS8_i_n_3476 : STD_LOGIC;
-  signal PS8_i_n_3477 : STD_LOGIC;
-  signal PS8_i_n_3478 : STD_LOGIC;
-  signal PS8_i_n_3479 : STD_LOGIC;
   signal PS8_i_n_348 : STD_LOGIC;
-  signal PS8_i_n_3480 : STD_LOGIC;
-  signal PS8_i_n_3481 : STD_LOGIC;
-  signal PS8_i_n_3482 : STD_LOGIC;
-  signal PS8_i_n_3483 : STD_LOGIC;
-  signal PS8_i_n_3484 : STD_LOGIC;
-  signal PS8_i_n_3485 : STD_LOGIC;
-  signal PS8_i_n_3486 : STD_LOGIC;
-  signal PS8_i_n_3487 : STD_LOGIC;
-  signal PS8_i_n_3488 : STD_LOGIC;
-  signal PS8_i_n_3489 : STD_LOGIC;
   signal PS8_i_n_349 : STD_LOGIC;
-  signal PS8_i_n_3490 : STD_LOGIC;
-  signal PS8_i_n_3491 : STD_LOGIC;
-  signal PS8_i_n_3492 : STD_LOGIC;
-  signal PS8_i_n_3493 : STD_LOGIC;
-  signal PS8_i_n_3494 : STD_LOGIC;
-  signal PS8_i_n_3495 : STD_LOGIC;
-  signal PS8_i_n_3496 : STD_LOGIC;
-  signal PS8_i_n_3497 : STD_LOGIC;
-  signal PS8_i_n_3498 : STD_LOGIC;
-  signal PS8_i_n_3499 : STD_LOGIC;
   signal PS8_i_n_35 : STD_LOGIC;
   signal PS8_i_n_350 : STD_LOGIC;
-  signal PS8_i_n_3500 : STD_LOGIC;
-  signal PS8_i_n_3501 : STD_LOGIC;
-  signal PS8_i_n_3502 : STD_LOGIC;
-  signal PS8_i_n_3503 : STD_LOGIC;
-  signal PS8_i_n_3504 : STD_LOGIC;
-  signal PS8_i_n_3505 : STD_LOGIC;
-  signal PS8_i_n_3506 : STD_LOGIC;
-  signal PS8_i_n_3507 : STD_LOGIC;
-  signal PS8_i_n_3508 : STD_LOGIC;
-  signal PS8_i_n_3509 : STD_LOGIC;
   signal PS8_i_n_351 : STD_LOGIC;
-  signal PS8_i_n_3510 : STD_LOGIC;
-  signal PS8_i_n_3511 : STD_LOGIC;
-  signal PS8_i_n_3512 : STD_LOGIC;
-  signal PS8_i_n_3513 : STD_LOGIC;
-  signal PS8_i_n_3514 : STD_LOGIC;
-  signal PS8_i_n_3515 : STD_LOGIC;
-  signal PS8_i_n_3516 : STD_LOGIC;
-  signal PS8_i_n_3517 : STD_LOGIC;
-  signal PS8_i_n_3518 : STD_LOGIC;
-  signal PS8_i_n_3519 : STD_LOGIC;
   signal PS8_i_n_352 : STD_LOGIC;
-  signal PS8_i_n_3520 : STD_LOGIC;
-  signal PS8_i_n_3521 : STD_LOGIC;
-  signal PS8_i_n_3522 : STD_LOGIC;
-  signal PS8_i_n_3523 : STD_LOGIC;
-  signal PS8_i_n_3524 : STD_LOGIC;
-  signal PS8_i_n_3525 : STD_LOGIC;
-  signal PS8_i_n_3526 : STD_LOGIC;
-  signal PS8_i_n_3527 : STD_LOGIC;
-  signal PS8_i_n_3528 : STD_LOGIC;
-  signal PS8_i_n_3529 : STD_LOGIC;
   signal PS8_i_n_353 : STD_LOGIC;
-  signal PS8_i_n_3530 : STD_LOGIC;
-  signal PS8_i_n_3531 : STD_LOGIC;
-  signal PS8_i_n_3532 : STD_LOGIC;
-  signal PS8_i_n_3533 : STD_LOGIC;
-  signal PS8_i_n_3534 : STD_LOGIC;
-  signal PS8_i_n_3535 : STD_LOGIC;
-  signal PS8_i_n_3536 : STD_LOGIC;
-  signal PS8_i_n_3537 : STD_LOGIC;
-  signal PS8_i_n_3538 : STD_LOGIC;
-  signal PS8_i_n_3539 : STD_LOGIC;
   signal PS8_i_n_354 : STD_LOGIC;
   signal PS8_i_n_355 : STD_LOGIC;
   signal PS8_i_n_356 : STD_LOGIC;
@@ -5464,100 +5374,6 @@ begin
   emio_enet0_dma_bus_width(1) <= \<const0>\;
   emio_enet0_dma_bus_width(0) <= \<const0>\;
   emio_enet0_dma_tx_end_tog <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(93) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(92) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(91) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(90) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(89) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(88) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(87) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(86) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(85) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(84) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(83) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(82) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(81) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(80) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(79) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(78) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(77) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(76) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(75) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(74) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(73) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(72) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(71) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(70) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(69) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(68) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(67) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(66) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(65) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(64) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(63) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(62) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(61) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(60) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(59) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(58) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(57) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(56) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(55) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(54) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(53) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(52) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(51) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(50) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(49) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(48) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(47) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(46) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(45) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(44) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(43) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(42) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(41) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(40) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(39) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(38) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(37) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(36) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(35) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(34) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(33) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(32) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(31) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(30) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(29) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(28) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(27) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(26) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(25) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(24) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(23) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(22) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(21) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(20) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(19) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(18) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(17) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(16) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(15) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(14) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(13) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(12) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(11) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(10) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(9) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(8) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(7) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(6) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(5) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(4) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(3) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(2) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(1) <= \<const0>\;
-  emio_enet0_enet_tsu_timer_cnt(0) <= \<const0>\;
   emio_enet0_gmii_tx_en <= \<const0>\;
   emio_enet0_gmii_tx_er <= \<const0>\;
   emio_enet0_gmii_txd(7) <= \<const0>\;
@@ -9849,100 +9665,7 @@ PS8_i: unisim.vcomponents.PS8
       EMIOENET0DMATXENDTOG => PS8_i_n_12,
       EMIOENET0DMATXSTATUSTOG => '0',
       EMIOENET0EXTINTIN => '0',
-      EMIOENET0GEMTSUTIMERCNT(93) => PS8_i_n_3446,
-      EMIOENET0GEMTSUTIMERCNT(92) => PS8_i_n_3447,
-      EMIOENET0GEMTSUTIMERCNT(91) => PS8_i_n_3448,
-      EMIOENET0GEMTSUTIMERCNT(90) => PS8_i_n_3449,
-      EMIOENET0GEMTSUTIMERCNT(89) => PS8_i_n_3450,
-      EMIOENET0GEMTSUTIMERCNT(88) => PS8_i_n_3451,
-      EMIOENET0GEMTSUTIMERCNT(87) => PS8_i_n_3452,
-      EMIOENET0GEMTSUTIMERCNT(86) => PS8_i_n_3453,
-      EMIOENET0GEMTSUTIMERCNT(85) => PS8_i_n_3454,
-      EMIOENET0GEMTSUTIMERCNT(84) => PS8_i_n_3455,
-      EMIOENET0GEMTSUTIMERCNT(83) => PS8_i_n_3456,
-      EMIOENET0GEMTSUTIMERCNT(82) => PS8_i_n_3457,
-      EMIOENET0GEMTSUTIMERCNT(81) => PS8_i_n_3458,
-      EMIOENET0GEMTSUTIMERCNT(80) => PS8_i_n_3459,
-      EMIOENET0GEMTSUTIMERCNT(79) => PS8_i_n_3460,
-      EMIOENET0GEMTSUTIMERCNT(78) => PS8_i_n_3461,
-      EMIOENET0GEMTSUTIMERCNT(77) => PS8_i_n_3462,
-      EMIOENET0GEMTSUTIMERCNT(76) => PS8_i_n_3463,
-      EMIOENET0GEMTSUTIMERCNT(75) => PS8_i_n_3464,
-      EMIOENET0GEMTSUTIMERCNT(74) => PS8_i_n_3465,
-      EMIOENET0GEMTSUTIMERCNT(73) => PS8_i_n_3466,
-      EMIOENET0GEMTSUTIMERCNT(72) => PS8_i_n_3467,
-      EMIOENET0GEMTSUTIMERCNT(71) => PS8_i_n_3468,
-      EMIOENET0GEMTSUTIMERCNT(70) => PS8_i_n_3469,
-      EMIOENET0GEMTSUTIMERCNT(69) => PS8_i_n_3470,
-      EMIOENET0GEMTSUTIMERCNT(68) => PS8_i_n_3471,
-      EMIOENET0GEMTSUTIMERCNT(67) => PS8_i_n_3472,
-      EMIOENET0GEMTSUTIMERCNT(66) => PS8_i_n_3473,
-      EMIOENET0GEMTSUTIMERCNT(65) => PS8_i_n_3474,
-      EMIOENET0GEMTSUTIMERCNT(64) => PS8_i_n_3475,
-      EMIOENET0GEMTSUTIMERCNT(63) => PS8_i_n_3476,
-      EMIOENET0GEMTSUTIMERCNT(62) => PS8_i_n_3477,
-      EMIOENET0GEMTSUTIMERCNT(61) => PS8_i_n_3478,
-      EMIOENET0GEMTSUTIMERCNT(60) => PS8_i_n_3479,
-      EMIOENET0GEMTSUTIMERCNT(59) => PS8_i_n_3480,
-      EMIOENET0GEMTSUTIMERCNT(58) => PS8_i_n_3481,
-      EMIOENET0GEMTSUTIMERCNT(57) => PS8_i_n_3482,
-      EMIOENET0GEMTSUTIMERCNT(56) => PS8_i_n_3483,
-      EMIOENET0GEMTSUTIMERCNT(55) => PS8_i_n_3484,
-      EMIOENET0GEMTSUTIMERCNT(54) => PS8_i_n_3485,
-      EMIOENET0GEMTSUTIMERCNT(53) => PS8_i_n_3486,
-      EMIOENET0GEMTSUTIMERCNT(52) => PS8_i_n_3487,
-      EMIOENET0GEMTSUTIMERCNT(51) => PS8_i_n_3488,
-      EMIOENET0GEMTSUTIMERCNT(50) => PS8_i_n_3489,
-      EMIOENET0GEMTSUTIMERCNT(49) => PS8_i_n_3490,
-      EMIOENET0GEMTSUTIMERCNT(48) => PS8_i_n_3491,
-      EMIOENET0GEMTSUTIMERCNT(47) => PS8_i_n_3492,
-      EMIOENET0GEMTSUTIMERCNT(46) => PS8_i_n_3493,
-      EMIOENET0GEMTSUTIMERCNT(45) => PS8_i_n_3494,
-      EMIOENET0GEMTSUTIMERCNT(44) => PS8_i_n_3495,
-      EMIOENET0GEMTSUTIMERCNT(43) => PS8_i_n_3496,
-      EMIOENET0GEMTSUTIMERCNT(42) => PS8_i_n_3497,
-      EMIOENET0GEMTSUTIMERCNT(41) => PS8_i_n_3498,
-      EMIOENET0GEMTSUTIMERCNT(40) => PS8_i_n_3499,
-      EMIOENET0GEMTSUTIMERCNT(39) => PS8_i_n_3500,
-      EMIOENET0GEMTSUTIMERCNT(38) => PS8_i_n_3501,
-      EMIOENET0GEMTSUTIMERCNT(37) => PS8_i_n_3502,
-      EMIOENET0GEMTSUTIMERCNT(36) => PS8_i_n_3503,
-      EMIOENET0GEMTSUTIMERCNT(35) => PS8_i_n_3504,
-      EMIOENET0GEMTSUTIMERCNT(34) => PS8_i_n_3505,
-      EMIOENET0GEMTSUTIMERCNT(33) => PS8_i_n_3506,
-      EMIOENET0GEMTSUTIMERCNT(32) => PS8_i_n_3507,
-      EMIOENET0GEMTSUTIMERCNT(31) => PS8_i_n_3508,
-      EMIOENET0GEMTSUTIMERCNT(30) => PS8_i_n_3509,
-      EMIOENET0GEMTSUTIMERCNT(29) => PS8_i_n_3510,
-      EMIOENET0GEMTSUTIMERCNT(28) => PS8_i_n_3511,
-      EMIOENET0GEMTSUTIMERCNT(27) => PS8_i_n_3512,
-      EMIOENET0GEMTSUTIMERCNT(26) => PS8_i_n_3513,
-      EMIOENET0GEMTSUTIMERCNT(25) => PS8_i_n_3514,
-      EMIOENET0GEMTSUTIMERCNT(24) => PS8_i_n_3515,
-      EMIOENET0GEMTSUTIMERCNT(23) => PS8_i_n_3516,
-      EMIOENET0GEMTSUTIMERCNT(22) => PS8_i_n_3517,
-      EMIOENET0GEMTSUTIMERCNT(21) => PS8_i_n_3518,
-      EMIOENET0GEMTSUTIMERCNT(20) => PS8_i_n_3519,
-      EMIOENET0GEMTSUTIMERCNT(19) => PS8_i_n_3520,
-      EMIOENET0GEMTSUTIMERCNT(18) => PS8_i_n_3521,
-      EMIOENET0GEMTSUTIMERCNT(17) => PS8_i_n_3522,
-      EMIOENET0GEMTSUTIMERCNT(16) => PS8_i_n_3523,
-      EMIOENET0GEMTSUTIMERCNT(15) => PS8_i_n_3524,
-      EMIOENET0GEMTSUTIMERCNT(14) => PS8_i_n_3525,
-      EMIOENET0GEMTSUTIMERCNT(13) => PS8_i_n_3526,
-      EMIOENET0GEMTSUTIMERCNT(12) => PS8_i_n_3527,
-      EMIOENET0GEMTSUTIMERCNT(11) => PS8_i_n_3528,
-      EMIOENET0GEMTSUTIMERCNT(10) => PS8_i_n_3529,
-      EMIOENET0GEMTSUTIMERCNT(9) => PS8_i_n_3530,
-      EMIOENET0GEMTSUTIMERCNT(8) => PS8_i_n_3531,
-      EMIOENET0GEMTSUTIMERCNT(7) => PS8_i_n_3532,
-      EMIOENET0GEMTSUTIMERCNT(6) => PS8_i_n_3533,
-      EMIOENET0GEMTSUTIMERCNT(5) => PS8_i_n_3534,
-      EMIOENET0GEMTSUTIMERCNT(4) => PS8_i_n_3535,
-      EMIOENET0GEMTSUTIMERCNT(3) => PS8_i_n_3536,
-      EMIOENET0GEMTSUTIMERCNT(2) => PS8_i_n_3537,
-      EMIOENET0GEMTSUTIMERCNT(1) => PS8_i_n_3538,
-      EMIOENET0GEMTSUTIMERCNT(0) => PS8_i_n_3539,
+      EMIOENET0GEMTSUTIMERCNT(93 downto 0) => emio_enet0_enet_tsu_timer_cnt(93 downto 0),
       EMIOENET0GMIICOL => '0',
       EMIOENET0GMIICRS => '0',
       EMIOENET0GMIIRXCLK => '0',
@@ -15881,6 +15604,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity project_1_zynq_ultra_ps_e_0_0 is
   port (
+    emio_enet0_enet_tsu_timer_cnt : out STD_LOGIC_VECTOR ( 93 downto 0 );
     pl_ps_irq0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     pl_resetn0 : out STD_LOGIC;
     pl_clk0 : out STD_LOGIC;
@@ -16401,7 +16125,6 @@ architecture STRUCTURE of project_1_zynq_ultra_ps_e_0_0 is
   signal NLW_inst_dp_m_axis_mixed_audio_tdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_inst_dp_video_out_pixel1_UNCONNECTED : STD_LOGIC_VECTOR ( 35 downto 0 );
   signal NLW_inst_emio_enet0_dma_bus_width_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_inst_emio_enet0_enet_tsu_timer_cnt_UNCONNECTED : STD_LOGIC_VECTOR ( 93 downto 0 );
   signal NLW_inst_emio_enet0_gmii_txd_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_inst_emio_enet0_rx_w_data_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_inst_emio_enet0_rx_w_status_UNCONNECTED : STD_LOGIC_VECTOR ( 44 downto 0 );
@@ -16830,8 +16553,12 @@ architecture STRUCTURE of project_1_zynq_ultra_ps_e_0_0 is
  "PS_POR_B, , , IN, PS_POR_B_503, LVCMOS18, 12, FAST, , PS_MIO_LVCMOS18_F_12,,  " & LF &
  "PS_PROG_B, , , IN, PS_PROG_B_503, LVCMOS18, 12, FAST, , PS_MIO_LVCMOS18_F_12,,  " & LF &
  "PS_SRST_B, , , IN, PS_SRST_B_503, LVCMOS18, 12, FAST, , PS_MIO_LVCMOS18_F_12,,  " & LF &
- "SATA1_MGTREFCLK1N, , , IN, PS_MGTREFCLK1N_505, , , , , ,,  " & LF &
- "SATA1_MGTREFCLK1P, , , IN, PS_MGTREFCLK1P_505, , , , , ,,  " & LF &
+ "GEM0_MGTRRXN0, , , IN, PS_MGTRRXN0_505, , , , , ,,  " & LF &
+ "GEM0_MGTRRXP0, , , IN, PS_MGTRRXP0_505, , , , , ,,  " & LF &
+ "GEM0_MGTRTXN0, , , OUT, PS_MGTRTXN0_505, , , , , ,,  " & LF &
+ "GEM0_MGTRTXP0, , , OUT, PS_MGTRTXP0_505, , , , , ,,  " & LF &
+ "SATA1_GEM0_MGTREFCLK1N, , , IN, PS_MGTREFCLK1N_505, , , , , ,,  " & LF &
+ "SATA1_GEM0_MGTREFCLK1P, , , IN, PS_MGTREFCLK1P_505, , , , , ,,  " & LF &
  "DP0_MGTRRXN1, , , IN, PS_MGTRRXN1_505, , , , , ,,  " & LF &
  "DP0_MGTRRXP1, , , IN, PS_MGTRRXP1_505, , , , , ,,  " & LF &
  "DP0_MGTRTXN1, , , OUT, PS_MGTRTXN1_505, , , , , ,,  " & LF &
@@ -16969,7 +16696,7 @@ architecture STRUCTURE of project_1_zynq_ultra_ps_e_0_0 is
   attribute PSS_JITTER : string;
   attribute PSS_JITTER of inst : label is "<PSS_EXTERNAL_CLOCKS><EXTERNAL_CLOCK name={PLCLK[0]} clock_external_divide={15} vco_name={IOPLL} vco_freq={2999.970} vco_internal_divide={2}/><EXTERNAL_CLOCK name={PLCLK[1]} clock_external_divide={15} vco_name={IOPLL} vco_freq={2999.970} vco_internal_divide={2}/></PSS_EXTERNAL_CLOCKS>";
   attribute PSS_POWER : string;
-  attribute PSS_POWER of inst : label is "<BLOCKTYPE name={PS8}> <PS8><FPD><PROCESSSORS><PROCESSOR name={Cortex A-53} numCores={4} L2Cache={Enable} clockFreq={1333.333008} load={0.5}/><PROCESSOR name={GPU Mali-400 MP} numCores={2} clockFreq={499.994995} load={0.5} /></PROCESSSORS><PLLS><PLL domain={APU} vco={2666.640} /><PLL domain={DDR} vco={2133.312} /><PLL domain={Video} vco={2999.970} /></PLLS><MEMORY memType={DDR4} dataWidth={8} clockFreq={1066.656} readRate={0.5} writeRate={0.5} cmdAddressActivity={0.5} /><SERDES><GT name={PCIe} standard={} lanes={} usageRate={0.5} /><GT name={SATA} standard={SATA3} lanes={1} usageRate={0.5} /><GT name={Display Port} standard={SVGA-60 (800x600)} lanes={1} usageRate={0.5} />clockFreq={60} /><GT name={USB3} standard={USB3.0} lanes={1}usageRate={0.5} /><GT name={SGMII} standard={SGMII} lanes={0} usageRate={0.5} /></SERDES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><FPINTERCONNECT clockFreq={533.328003} Bandwidth={Low} /></FPD><LPD><PROCESSSORS><PROCESSOR name={Cortex R-5} usage={Enable} TCM={Enable} OCM={Enable} clockFreq={533.328003} load={0.5}/></PROCESSSORS><PLLS><PLL domain={IO} vco={2999.970} /><PLL domain={RPLL} vco={2133.312} /></PLLS><CSUPMU><Unit name={CSU} usageRate={0.5} clockFreq={180} /><Unit name={PMU} usageRate={0.5} clockFreq={180} /></CSUPMU><GPIO><Bank ioBank={VCC_PSIO0} number={3} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO1} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO2} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO3} number={16} io_standard={LVCMOS 1.8V} /></GPIO><IOINTERFACES> <IO name={QSPI} io_standard={} ioBank={VCC_PSIO0} clockFreq={124.998749} inputs={0} outputs={2} inouts={4} usageRate={0.5}/><IO name={NAND 3.1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={USB0} io_standard={} ioBank={VCC_PSIO2} clockFreq={249.997498} inputs={3} outputs={1} inouts={8} usageRate={0.5}/><IO name={USB1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth3} io_standard={} ioBank={VCC_PSIO2} clockFreq={124.998749} inputs={6} outputs={6} inouts={0} usageRate={0.5}/><IO name={GPIO 0} io_standard={} ioBank={VCC_PSIO0} clockFreq={1} inputs={0} outputs={0} inouts={3} usageRate={0.5}/><IO name={GPIO 1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 3} io_standard={} ioBank={VCC_PSIO3} clockFreq={1} inputs={} outputs={} inouts={16} usageRate={0.5}/><IO name={UART0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={UART1} io_standard={} ioBank={VCC_PSIO1} clockFreq={99.999001} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={I2C0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={I2C1} io_standard={} ioBank={VCC_PSIO0} clockFreq={99.999001} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={SPI0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SPI1} io_standard={} ioBank={VCC_PSIO0} clockFreq={187.498123} inputs={0} outputs={0} inouts={4} usageRate={0.5}/><IO name={CAN0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SD0} io_standard={} ioBank={VCC_PSIO0} clockFreq={187.498123} inputs={0} outputs={2} inouts={9} usageRate={0.5}/><IO name={SD1} io_standard={} ioBank={VCC_PSIO1} clockFreq={187.498123} inputs={1} outputs={2} inouts={5} usageRate={0.5}/><IO name={Trace} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={TTC0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC2} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC3} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={PJTAG} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={DPAUX} io_standard={} ioBank={VCC_PSIO1} clockFreq={} inputs={2} outputs={2} inouts={0} usageRate={0.5}/><IO name={WDT0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={WDT1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/></IOINTERFACES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><LPINTERCONNECT clockFreq={499.994995} Bandwidth={High} /></LPD></PS8></BLOCKTYPE>/>";
+  attribute PSS_POWER of inst : label is "<BLOCKTYPE name={PS8}> <PS8><FPD><PROCESSSORS><PROCESSOR name={Cortex A-53} numCores={4} L2Cache={Enable} clockFreq={1333.333008} load={0.5}/><PROCESSOR name={GPU Mali-400 MP} numCores={2} clockFreq={499.994995} load={0.5} /></PROCESSSORS><PLLS><PLL domain={APU} vco={2666.640} /><PLL domain={DDR} vco={2133.312} /><PLL domain={Video} vco={2999.970} /></PLLS><MEMORY memType={DDR4} dataWidth={8} clockFreq={1066.656} readRate={0.5} writeRate={0.5} cmdAddressActivity={0.5} /><SERDES><GT name={PCIe} standard={} lanes={} usageRate={0.5} /><GT name={SATA} standard={SATA3} lanes={1} usageRate={0.5} /><GT name={Display Port} standard={SVGA-60 (800x600)} lanes={1} usageRate={0.5} />clockFreq={60} /><GT name={USB3} standard={USB3.0} lanes={1}usageRate={0.5} /><GT name={SGMII} standard={SGMII} lanes={1} usageRate={0.5} /></SERDES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><FPINTERCONNECT clockFreq={533.328003} Bandwidth={Low} /></FPD><LPD><PROCESSSORS><PROCESSOR name={Cortex R-5} usage={Enable} TCM={Enable} OCM={Enable} clockFreq={533.328003} load={0.5}/></PROCESSSORS><PLLS><PLL domain={IO} vco={2999.970} /><PLL domain={RPLL} vco={2133.312} /></PLLS><CSUPMU><Unit name={CSU} usageRate={0.5} clockFreq={180} /><Unit name={PMU} usageRate={0.5} clockFreq={180} /></CSUPMU><GPIO><Bank ioBank={VCC_PSIO0} number={3} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO1} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO2} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO3} number={16} io_standard={LVCMOS 1.8V} /></GPIO><IOINTERFACES> <IO name={QSPI} io_standard={} ioBank={VCC_PSIO0} clockFreq={124.998749} inputs={0} outputs={2} inouts={4} usageRate={0.5}/><IO name={NAND 3.1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={USB0} io_standard={} ioBank={VCC_PSIO2} clockFreq={249.997498} inputs={3} outputs={1} inouts={8} usageRate={0.5}/><IO name={USB1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth0} io_standard={} ioBank={} clockFreq={124.998749} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={GigabitEth1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth3} io_standard={} ioBank={VCC_PSIO2} clockFreq={124.998749} inputs={6} outputs={6} inouts={0} usageRate={0.5}/><IO name={GPIO 0} io_standard={} ioBank={VCC_PSIO0} clockFreq={1} inputs={0} outputs={0} inouts={3} usageRate={0.5}/><IO name={GPIO 1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 3} io_standard={} ioBank={VCC_PSIO3} clockFreq={1} inputs={} outputs={} inouts={16} usageRate={0.5}/><IO name={UART0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={UART1} io_standard={} ioBank={VCC_PSIO1} clockFreq={99.999001} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={I2C0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={I2C1} io_standard={} ioBank={VCC_PSIO0} clockFreq={99.999001} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={SPI0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SPI1} io_standard={} ioBank={VCC_PSIO0} clockFreq={187.498123} inputs={0} outputs={0} inouts={4} usageRate={0.5}/><IO name={CAN0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SD0} io_standard={} ioBank={VCC_PSIO0} clockFreq={187.498123} inputs={0} outputs={2} inouts={9} usageRate={0.5}/><IO name={SD1} io_standard={} ioBank={VCC_PSIO1} clockFreq={187.498123} inputs={1} outputs={2} inouts={5} usageRate={0.5}/><IO name={Trace} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={TTC0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC2} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC3} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={PJTAG} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={DPAUX} io_standard={} ioBank={VCC_PSIO1} clockFreq={} inputs={2} outputs={2} inouts={0} usageRate={0.5}/><IO name={WDT0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={WDT1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/></IOINTERFACES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><LPINTERCONNECT clockFreq={499.994995} Bandwidth={High} /></LPD></PS8></BLOCKTYPE>/>";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of pl_clk0 : signal is "xilinx.com:signal:clock:1.0 PL_CLK0 CLK";
   attribute X_INTERFACE_PARAMETER : string;
@@ -17030,7 +16757,7 @@ inst: entity work.project_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_1_zynq_ultr
       emio_enet0_dma_bus_width(1 downto 0) => NLW_inst_emio_enet0_dma_bus_width_UNCONNECTED(1 downto 0),
       emio_enet0_dma_tx_end_tog => NLW_inst_emio_enet0_dma_tx_end_tog_UNCONNECTED,
       emio_enet0_dma_tx_status_tog => '0',
-      emio_enet0_enet_tsu_timer_cnt(93 downto 0) => NLW_inst_emio_enet0_enet_tsu_timer_cnt_UNCONNECTED(93 downto 0),
+      emio_enet0_enet_tsu_timer_cnt(93 downto 0) => emio_enet0_enet_tsu_timer_cnt(93 downto 0),
       emio_enet0_ext_int_in => '0',
       emio_enet0_gmii_col => '0',
       emio_enet0_gmii_crs => '0',

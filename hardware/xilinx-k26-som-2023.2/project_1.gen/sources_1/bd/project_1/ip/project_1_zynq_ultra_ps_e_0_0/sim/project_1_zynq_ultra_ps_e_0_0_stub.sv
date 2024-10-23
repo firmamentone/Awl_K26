@@ -66,6 +66,7 @@ typedef bit bit_as_bool;
 
 (* SC_MODULE_EXPORT *)
 module project_1_zynq_ultra_ps_e_0_0 (
+  output bit [93 : 0] emio_enet0_enet_tsu_timer_cnt,
   input bit [0 : 0] pl_ps_irq0,
   output bit_as_bool pl_resetn0,
   output bit_as_bool pl_clk0,
@@ -76,9 +77,10 @@ endmodule
 
 `ifdef XCELIUM
 (* XMSC_MODULE_EXPORT *)
-module project_1_zynq_ultra_ps_e_0_0 (pl_ps_irq0,pl_resetn0,pl_clk0,pl_clk1)
+module project_1_zynq_ultra_ps_e_0_0 (emio_enet0_enet_tsu_timer_cnt,pl_ps_irq0,pl_resetn0,pl_clk0,pl_clk1)
 (* integer foreign = "SystemC";
 *);
+  output wire [93 : 0] emio_enet0_enet_tsu_timer_cnt;
   input bit [0 : 0] pl_ps_irq0;
   output wire pl_resetn0;
   output wire pl_clk0;

@@ -61,10 +61,11 @@
 
 
 #ifdef XILINX_SIMULATOR
-project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
+project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm), emio_enet0_enet_tsu_timer_cnt("emio_enet0_enet_tsu_timer_cnt"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
 {
 
   // initialize pins
+  mp_impl->emio_enet0_enet_tsu_timer_cnt(emio_enet0_enet_tsu_timer_cnt);
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
@@ -82,10 +83,11 @@ void project_1_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 
 
 #ifdef XM_SYSTEMC
-project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
+project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm), emio_enet0_enet_tsu_timer_cnt("emio_enet0_enet_tsu_timer_cnt"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
 {
 
   // initialize pins
+  mp_impl->emio_enet0_enet_tsu_timer_cnt(emio_enet0_enet_tsu_timer_cnt);
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
@@ -103,10 +105,11 @@ void project_1_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 
 
 #ifdef RIVIERA
-project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
+project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm), emio_enet0_enet_tsu_timer_cnt("emio_enet0_enet_tsu_timer_cnt"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
 {
 
   // initialize pins
+  mp_impl->emio_enet0_enet_tsu_timer_cnt(emio_enet0_enet_tsu_timer_cnt);
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
@@ -124,9 +127,10 @@ void project_1_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 
 
 #ifdef VCSSYSTEMC
-project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm),  pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
+project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm),  emio_enet0_enet_tsu_timer_cnt("emio_enet0_enet_tsu_timer_cnt"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
 {
   // initialize pins
+  mp_impl->emio_enet0_enet_tsu_timer_cnt(emio_enet0_enet_tsu_timer_cnt);
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
@@ -147,9 +151,10 @@ void project_1_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 
 
 #ifdef MTI_SYSTEMC
-project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm),  pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
+project_1_zynq_ultra_ps_e_0_0::project_1_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : project_1_zynq_ultra_ps_e_0_0_sc(nm),  emio_enet0_enet_tsu_timer_cnt("emio_enet0_enet_tsu_timer_cnt"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk1("pl_clk1")
 {
   // initialize pins
+  mp_impl->emio_enet0_enet_tsu_timer_cnt(emio_enet0_enet_tsu_timer_cnt);
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
@@ -183,5 +188,6 @@ XMSC_MODULE_EXPORT(project_1_zynq_ultra_ps_e_0_0);
 
 #ifdef RIVIERA
 SC_MODULE_EXPORT(project_1_zynq_ultra_ps_e_0_0);
+SC_REGISTER_BV(94);
 #endif
 

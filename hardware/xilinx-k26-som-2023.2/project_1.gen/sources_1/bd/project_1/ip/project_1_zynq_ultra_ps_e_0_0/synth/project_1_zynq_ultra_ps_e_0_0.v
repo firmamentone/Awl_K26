@@ -57,12 +57,14 @@ GP6_DATA_WIDTH=128,C_USE_DIFF_RW_CLK_GP0=0,C_USE_DIFF_RW_CLK_GP1=0,C_USE_DIFF_RW
 ,C_NUM_F2P_1_INTR_INPUTS=1,C_EMIO_GPIO_WIDTH=1,C_NUM_FABRIC_RESETS=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module project_1_zynq_ultra_ps_e_0_0 (
+  emio_enet0_enet_tsu_timer_cnt,
   pl_ps_irq0,
   pl_resetn0,
   pl_clk0,
   pl_clk1
 );
 
+output wire [93 : 0] emio_enet0_enet_tsu_timer_cnt;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_PS_IRQ0, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 PL_PS_IRQ0 INTERRUPT" *)
 input wire [0 : 0] pl_ps_irq0;
@@ -876,7 +878,7 @@ output wire pl_clk1;
     .fmio_gem_tsu_clk_to_pl_bufg(),
     .fmio_gem_tsu_clk_from_pl(1'B0),
     .emio_enet_tsu_clk(1'B0),
-    .emio_enet0_enet_tsu_timer_cnt(),
+    .emio_enet0_enet_tsu_timer_cnt(emio_enet0_enet_tsu_timer_cnt),
     .emio_enet0_ext_int_in(1'B0),
     .emio_enet1_ext_int_in(1'B0),
     .emio_enet2_ext_int_in(1'B0),

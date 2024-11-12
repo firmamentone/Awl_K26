@@ -2,5 +2,8 @@
 # Copyright (C) 2022, Advanced Micro Devices, Inc.
 # SPDX-License-Identifier: Apache-2.0
 
-set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design];
+set_property PACKAGE_PIN AC12 [get_ports "GPIO_Out0"];
+set_property IOSTANDARD LVCMOS18 [get_ports "GPIO_Out0"];
+
 

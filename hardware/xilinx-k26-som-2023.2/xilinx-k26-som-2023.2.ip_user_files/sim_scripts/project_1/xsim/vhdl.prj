@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_0_0/sim/project_1_proc_sys_reset_0_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_1_0/sim/project_1_proc_sys_reset_1_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_axi_intc_0_0/sim/project_1_axi_intc_0_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_0_0/sim/project_1_axi_gpio_0_0.vhd" \
+
+# Do not sort compile order
+nosort

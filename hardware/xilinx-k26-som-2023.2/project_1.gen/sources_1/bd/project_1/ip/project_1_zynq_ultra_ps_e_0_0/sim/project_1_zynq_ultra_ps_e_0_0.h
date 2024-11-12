@@ -80,6 +80,46 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > maxihpm0_lpd_aclk;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_awaddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_awlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_awburst;
+  sc_core::sc_out< bool > maxigp2_awlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awprot;
+  sc_core::sc_out< bool > maxigp2_awvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awuser;
+  sc_core::sc_in< bool > maxigp2_awready;
+  sc_core::sc_out< sc_dt::sc_bv<32> > maxigp2_wdata;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_wstrb;
+  sc_core::sc_out< bool > maxigp2_wlast;
+  sc_core::sc_out< bool > maxigp2_wvalid;
+  sc_core::sc_in< bool > maxigp2_wready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_bid;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_bresp;
+  sc_core::sc_in< bool > maxigp2_bvalid;
+  sc_core::sc_out< bool > maxigp2_bready;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_arid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_araddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_arlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_arburst;
+  sc_core::sc_out< bool > maxigp2_arlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arprot;
+  sc_core::sc_out< bool > maxigp2_arvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_aruser;
+  sc_core::sc_in< bool > maxigp2_arready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_rid;
+  sc_core::sc_in< sc_dt::sc_bv<32> > maxigp2_rdata;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_rresp;
+  sc_core::sc_in< bool > maxigp2_rlast;
+  sc_core::sc_in< bool > maxigp2_rvalid;
+  sc_core::sc_out< bool > maxigp2_rready;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awqos;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arqos;
   sc_core::sc_out< sc_dt::sc_bv<94> > emio_enet0_enet_tsu_timer_cnt;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
@@ -95,6 +135,8 @@ protected:
 
 private:
 
+  xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>* mp_M_AXI_HPM0_LPD_transactor;
+  sc_signal< bool > m_M_AXI_HPM0_LPD_transactor_rst_signal;
 
 };
 #endif // XILINX_SIMULATOR
@@ -112,6 +154,46 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > maxihpm0_lpd_aclk;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_awaddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_awlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_awburst;
+  sc_core::sc_out< bool > maxigp2_awlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awprot;
+  sc_core::sc_out< bool > maxigp2_awvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awuser;
+  sc_core::sc_in< bool > maxigp2_awready;
+  sc_core::sc_out< sc_dt::sc_bv<32> > maxigp2_wdata;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_wstrb;
+  sc_core::sc_out< bool > maxigp2_wlast;
+  sc_core::sc_out< bool > maxigp2_wvalid;
+  sc_core::sc_in< bool > maxigp2_wready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_bid;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_bresp;
+  sc_core::sc_in< bool > maxigp2_bvalid;
+  sc_core::sc_out< bool > maxigp2_bready;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_arid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_araddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_arlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_arburst;
+  sc_core::sc_out< bool > maxigp2_arlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arprot;
+  sc_core::sc_out< bool > maxigp2_arvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_aruser;
+  sc_core::sc_in< bool > maxigp2_arready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_rid;
+  sc_core::sc_in< sc_dt::sc_bv<32> > maxigp2_rdata;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_rresp;
+  sc_core::sc_in< bool > maxigp2_rlast;
+  sc_core::sc_in< bool > maxigp2_rvalid;
+  sc_core::sc_out< bool > maxigp2_rready;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awqos;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arqos;
   sc_core::sc_out< sc_dt::sc_bv<94> > emio_enet0_enet_tsu_timer_cnt;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
@@ -127,6 +209,8 @@ protected:
 
 private:
 
+  xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>* mp_M_AXI_HPM0_LPD_transactor;
+  sc_signal< bool > m_M_AXI_HPM0_LPD_transactor_rst_signal;
 
 };
 #endif // XM_SYSTEMC
@@ -144,6 +228,46 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > maxihpm0_lpd_aclk;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_awaddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_awlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_awburst;
+  sc_core::sc_out< bool > maxigp2_awlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awprot;
+  sc_core::sc_out< bool > maxigp2_awvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awuser;
+  sc_core::sc_in< bool > maxigp2_awready;
+  sc_core::sc_out< sc_dt::sc_bv<32> > maxigp2_wdata;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_wstrb;
+  sc_core::sc_out< bool > maxigp2_wlast;
+  sc_core::sc_out< bool > maxigp2_wvalid;
+  sc_core::sc_in< bool > maxigp2_wready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_bid;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_bresp;
+  sc_core::sc_in< bool > maxigp2_bvalid;
+  sc_core::sc_out< bool > maxigp2_bready;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_arid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_araddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_arlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_arburst;
+  sc_core::sc_out< bool > maxigp2_arlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arprot;
+  sc_core::sc_out< bool > maxigp2_arvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_aruser;
+  sc_core::sc_in< bool > maxigp2_arready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_rid;
+  sc_core::sc_in< sc_dt::sc_bv<32> > maxigp2_rdata;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_rresp;
+  sc_core::sc_in< bool > maxigp2_rlast;
+  sc_core::sc_in< bool > maxigp2_rvalid;
+  sc_core::sc_out< bool > maxigp2_rready;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awqos;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arqos;
   sc_core::sc_out< sc_dt::sc_bv<94> > emio_enet0_enet_tsu_timer_cnt;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
@@ -159,6 +283,8 @@ protected:
 
 private:
 
+  xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>* mp_M_AXI_HPM0_LPD_transactor;
+  sc_signal< bool > m_M_AXI_HPM0_LPD_transactor_rst_signal;
 
 };
 #endif // RIVIERA
@@ -167,6 +293,8 @@ private:
 
 
 #ifdef VCSSYSTEMC
+#include "utils/xtlm_aximm_initiator_stub.h"
+
 class DllExport project_1_zynq_ultra_ps_e_0_0 : public project_1_zynq_ultra_ps_e_0_0_sc
 {
 public:
@@ -176,6 +304,46 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > maxihpm0_lpd_aclk;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_awaddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_awlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_awburst;
+  sc_core::sc_out< bool > maxigp2_awlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awprot;
+  sc_core::sc_out< bool > maxigp2_awvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awuser;
+  sc_core::sc_in< bool > maxigp2_awready;
+  sc_core::sc_out< sc_dt::sc_bv<32> > maxigp2_wdata;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_wstrb;
+  sc_core::sc_out< bool > maxigp2_wlast;
+  sc_core::sc_out< bool > maxigp2_wvalid;
+  sc_core::sc_in< bool > maxigp2_wready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_bid;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_bresp;
+  sc_core::sc_in< bool > maxigp2_bvalid;
+  sc_core::sc_out< bool > maxigp2_bready;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_arid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_araddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_arlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_arburst;
+  sc_core::sc_out< bool > maxigp2_arlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arprot;
+  sc_core::sc_out< bool > maxigp2_arvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_aruser;
+  sc_core::sc_in< bool > maxigp2_arready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_rid;
+  sc_core::sc_in< sc_dt::sc_bv<32> > maxigp2_rdata;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_rresp;
+  sc_core::sc_in< bool > maxigp2_rlast;
+  sc_core::sc_in< bool > maxigp2_rvalid;
+  sc_core::sc_out< bool > maxigp2_rready;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awqos;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arqos;
   sc_core::sc_out< sc_dt::sc_bv<94> > emio_enet0_enet_tsu_timer_cnt;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
@@ -191,8 +359,12 @@ protected:
 
 private:
 
+  xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>* mp_M_AXI_HPM0_LPD_transactor;
+  sc_signal< bool > m_M_AXI_HPM0_LPD_transactor_rst_signal;
 
   // Transactor stubs
+  xtlm::xtlm_aximm_initiator_stub * M_AXI_HPM0_LPD_transactor_initiator_rd_socket_stub;
+  xtlm::xtlm_aximm_initiator_stub * M_AXI_HPM0_LPD_transactor_initiator_wr_socket_stub;
 
   // Socket stubs
 
@@ -203,6 +375,8 @@ private:
 
 
 #ifdef MTI_SYSTEMC
+#include "utils/xtlm_aximm_initiator_stub.h"
+
 class DllExport project_1_zynq_ultra_ps_e_0_0 : public project_1_zynq_ultra_ps_e_0_0_sc
 {
 public:
@@ -212,6 +386,46 @@ public:
 
   // module pin-to-pin RTL interface
 
+  sc_core::sc_in< bool > maxihpm0_lpd_aclk;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_awaddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_awlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_awburst;
+  sc_core::sc_out< bool > maxigp2_awlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_awprot;
+  sc_core::sc_out< bool > maxigp2_awvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_awuser;
+  sc_core::sc_in< bool > maxigp2_awready;
+  sc_core::sc_out< sc_dt::sc_bv<32> > maxigp2_wdata;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_wstrb;
+  sc_core::sc_out< bool > maxigp2_wlast;
+  sc_core::sc_out< bool > maxigp2_wvalid;
+  sc_core::sc_in< bool > maxigp2_wready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_bid;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_bresp;
+  sc_core::sc_in< bool > maxigp2_bvalid;
+  sc_core::sc_out< bool > maxigp2_bready;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_arid;
+  sc_core::sc_out< sc_dt::sc_bv<40> > maxigp2_araddr;
+  sc_core::sc_out< sc_dt::sc_bv<8> > maxigp2_arlen;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arsize;
+  sc_core::sc_out< sc_dt::sc_bv<2> > maxigp2_arburst;
+  sc_core::sc_out< bool > maxigp2_arlock;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arcache;
+  sc_core::sc_out< sc_dt::sc_bv<3> > maxigp2_arprot;
+  sc_core::sc_out< bool > maxigp2_arvalid;
+  sc_core::sc_out< sc_dt::sc_bv<16> > maxigp2_aruser;
+  sc_core::sc_in< bool > maxigp2_arready;
+  sc_core::sc_in< sc_dt::sc_bv<16> > maxigp2_rid;
+  sc_core::sc_in< sc_dt::sc_bv<32> > maxigp2_rdata;
+  sc_core::sc_in< sc_dt::sc_bv<2> > maxigp2_rresp;
+  sc_core::sc_in< bool > maxigp2_rlast;
+  sc_core::sc_in< bool > maxigp2_rvalid;
+  sc_core::sc_out< bool > maxigp2_rready;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_awqos;
+  sc_core::sc_out< sc_dt::sc_bv<4> > maxigp2_arqos;
   sc_core::sc_out< sc_dt::sc_bv<94> > emio_enet0_enet_tsu_timer_cnt;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
@@ -227,8 +441,12 @@ protected:
 
 private:
 
+  xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>* mp_M_AXI_HPM0_LPD_transactor;
+  sc_signal< bool > m_M_AXI_HPM0_LPD_transactor_rst_signal;
 
   // Transactor stubs
+  xtlm::xtlm_aximm_initiator_stub * M_AXI_HPM0_LPD_transactor_initiator_rd_socket_stub;
+  xtlm::xtlm_aximm_initiator_stub * M_AXI_HPM0_LPD_transactor_initiator_wr_socket_stub;
 
   // Socket stubs
 

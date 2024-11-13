@@ -71,7 +71,6 @@ vlog -work zynq_ultra_ps_e_vip_v1_0_15  -incr "+incdir+../../../../project_1.gen
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../project_1.gen/sources_1/bd/project_1/ipshared/ec67/hdl" "+incdir+../../../../project_1.gen/sources_1/bd/project_1/ipshared/2fcd/hdl" "+incdir+../../../../xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/c2c6" "+incdir+../../../../xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/ec67/hdl" "+incdir+/tools/Xilinx/Vivado/2023.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_15 -l zynq_ultra_ps_e_vip_v1_0_15 -l xil_defaultlib -l lib_cdc_v1_0_2 -l proc_sys_reset_v5_0_14 -l axi_lite_ipif_v3_0_4 -l axi_intc_v4_1_18 -l generic_baseblocks_v2_1_1 -l axi_register_slice_v2_1_29 -l fifo_generator_v13_2_9 -l axi_data_fifo_v2_1_28 -l axi_crossbar_v2_1_30 -l interrupt_control_v3_1_5 -l axi_gpio_v2_0_31 -l axi_protocol_converter_v2_1_29 \
 "../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/sim/project_1_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
-"../../../../project_1.gen/sources_1/bd/project_1/sim/project_1.v" \
 "../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_clk_wiz_0_0/project_1_clk_wiz_0_0_clk_wiz.v" \
 "../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_clk_wiz_0_0/project_1_clk_wiz_0_0.v" \
 
@@ -126,6 +125,12 @@ vcom -work axi_gpio_v2_0_31 -93  -incr \
 
 vcom -work xil_defaultlib -93  -incr \
 "../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_0_0/sim/project_1_axi_gpio_0_0.vhd" \
+
+vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../project_1.gen/sources_1/bd/project_1/ipshared/ec67/hdl" "+incdir+../../../../project_1.gen/sources_1/bd/project_1/ipshared/2fcd/hdl" "+incdir+../../../../xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/c2c6" "+incdir+../../../../xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/ec67/hdl" "+incdir+/tools/Xilinx/Vivado/2023.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_15 -l zynq_ultra_ps_e_vip_v1_0_15 -l xil_defaultlib -l lib_cdc_v1_0_2 -l proc_sys_reset_v5_0_14 -l axi_lite_ipif_v3_0_4 -l axi_intc_v4_1_18 -l generic_baseblocks_v2_1_1 -l axi_register_slice_v2_1_29 -l fifo_generator_v13_2_9 -l axi_data_fifo_v2_1_28 -l axi_crossbar_v2_1_30 -l interrupt_control_v3_1_5 -l axi_gpio_v2_0_31 -l axi_protocol_converter_v2_1_29 \
+"../../../../project_1.gen/sources_1/bd/project_1/sim/project_1.v" \
+
+vcom -work xil_defaultlib -93  -incr \
+"../../../../project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_1_1/sim/project_1_axi_gpio_1_1.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_29  -incr -v2k5 "+incdir+../../../../project_1.gen/sources_1/bd/project_1/ipshared/ec67/hdl" "+incdir+../../../../project_1.gen/sources_1/bd/project_1/ipshared/2fcd/hdl" "+incdir+../../../../xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/c2c6" "+incdir+../../../../xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/ec67/hdl" "+incdir+/tools/Xilinx/Vivado/2023.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_15 -l zynq_ultra_ps_e_vip_v1_0_15 -l xil_defaultlib -l lib_cdc_v1_0_2 -l proc_sys_reset_v5_0_14 -l axi_lite_ipif_v3_0_4 -l axi_intc_v4_1_18 -l generic_baseblocks_v2_1_1 -l axi_register_slice_v2_1_29 -l fifo_generator_v13_2_9 -l axi_data_fifo_v2_1_28 -l axi_crossbar_v2_1_30 -l interrupt_control_v3_1_5 -l axi_gpio_v2_0_31 -l axi_protocol_converter_v2_1_29 \
 "../../../../xilinx-k26-som-2023.2.gen/sources_1/bd/project_1/ipshared/a63f/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

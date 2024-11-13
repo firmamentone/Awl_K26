@@ -70,6 +70,11 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param power.enableCarry8RouteBelPower 1
+set_param chipscope.maxJobs 3
+set_param power.BramSDPPropagationFix 1
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableLutRouteBelPower 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LVI-i
 
@@ -104,6 +109,9 @@ set_property used_in_implementation false [get_files -all /home/tikao/K26Based/A
 set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_0_0/project_1_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_0_0/project_1_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_0_0/project_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_1_1/project_1_axi_gpio_1_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_1_1/project_1_axi_gpio_1_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_1_1/project_1_axi_gpio_1_1.xdc]
 set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_pc_0/project_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/project_1.gen/sources_1/bd/project_1/project_1_ooc.xdc]
 

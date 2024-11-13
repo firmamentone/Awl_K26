@@ -258,9 +258,6 @@ user layer 0 (USER_LAYER_0) []
 #
 # configuration written to /home/tikao/K26Based/Awl_K26/project-spec/configs/config
 #
-[INFO] Generating kconfig for rootfs
-[DEBUG] Running CMD: python3 /home/tikao/K26Based/Awl_K26/components/yocto/layers/meta-xilinx/meta-xilinx-core/gen-machine-conf/gen-machine-scripts/rootfsconfigs/rootfs_config.py --generate_kconfig /home/tikao/K26Based/Awl_K26/project-spec/meta-user/conf/user-rootfsconfig /home/tikao/K26Based/Awl_K26/project-spec/configs/rootfsconfigs
-[DEBUG] 
 [INFO] Silentconfig rootfs
 [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/tikao/K26Based/Awl_K26/project-spec/configs/rootfs_config conf /home/tikao/K26Based/Awl_K26/project-spec/configs/rootfsconfigs/Kconfig
 [DEBUG] *
@@ -3820,9 +3817,9 @@ Add Users to Sudo users (ADD_USERS_TO_SUDOERS) [petalinux]
 #
 # configuration written to /home/tikao/K26Based/Awl_K26/project-spec/configs/rootfs_config
 #
-[INFO] Generating machine conf file
-[INFO] Generating plnxtool conf file
-[DEBUG] Running CMD: nslookup -timeout=10 gitenterprise.xilinx.com | grep "Address" |                 awk '{print $2}' | sed -n 2p
-[DEBUG] 
-[DEBUG] Running CMD: python3 /home/tikao/K26Based/Awl_K26/components/yocto/layers/meta-xilinx/meta-xilinx-core/gen-machine-conf/gen-machine-scripts/rootfsconfigs/rootfs_config.py --update_cfg /home/tikao/K26Based/Awl_K26/project-spec/configs/rootfs_config /home/tikao/K26Based/Awl_K26/project-spec/configs/plnxtool.conf zynqmp
-[DEBUG] 
+[INFO] Adding user layers
+[DEBUG] Adding layer: /home/tikao/K26Based/Awl_K26/project-spec/meta-user
+[DEBUG] Running CMD: bitbake-layers -F add-layer /home/tikao/K26Based/Awl_K26/project-spec/meta-user
+[DEBUG] NOTE: Starting bitbake server...
+NOTE: Started PRServer with DBfile: /home/tikao/K26Based/Awl_K26/build/cache/prserv.sqlite3, Address: 127.0.0.1:45599, PID: 3062065
+

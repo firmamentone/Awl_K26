@@ -123,7 +123,11 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param power.enableCarry8RouteBelPower 1
   set_param chipscope.maxJobs 3
+  set_param power.BramSDPPropagationFix 1
+  set_param power.enableUnconnectedCarry8PinPower 1
+  set_param power.enableLutRouteBelPower 1
   set_param runs.launchOptions { -jobs 6  }
   open_checkpoint project_1_wrapper_routed.dcp
   set_property webtalk.parent_dir /home/tikao/K26Based/Awl_K26/hardware/xilinx-k26-som-2023.2/xilinx-k26-som-2023.2.cache/wt [current_project]

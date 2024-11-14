@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Wed Nov 13 15:20:08 2024
+| Date         : Thu Nov 14 10:32:10 2024
 | Host         : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_drc -file project_1_wrapper_drc_routed.rpt -pb project_1_wrapper_drc_routed.pb -rpx project_1_wrapper_drc_routed.rpx
 | Design       : project_1_wrapper
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_project_1_wrapper
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>

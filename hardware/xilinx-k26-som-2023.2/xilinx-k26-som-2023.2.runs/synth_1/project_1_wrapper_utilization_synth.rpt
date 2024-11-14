@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Wed Nov 13 15:18:10 2024
+| Date         : Thu Nov 14 10:27:59 2024
 | Host         : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_utilization -file project_1_wrapper_utilization_synth.rpt -pb project_1_wrapper_utilization_synth.pb
 | Design       : project_1_wrapper
@@ -32,13 +32,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 1007 |     0 |          0 |    117120 |  0.86 |
-|   LUT as Logic             |  929 |     0 |          0 |    117120 |  0.79 |
+| CLB LUTs*                  | 1028 |     0 |          0 |    117120 |  0.88 |
+|   LUT as Logic             |  950 |     0 |          0 |    117120 |  0.81 |
 |   LUT as Memory            |   78 |     0 |          0 |     57600 |  0.14 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |   78 |     0 |            |           |       |
-| CLB Registers              |  896 |     0 |          0 |    234240 |  0.38 |
-|   Register as Flip Flop    |  896 |     0 |          0 |    234240 |  0.38 |
+| CLB Registers              |  948 |     0 |          0 |    234240 |  0.40 |
+|   Register as Flip Flop    |  948 |     0 |          0 |    234240 |  0.40 |
 |   Register as Latch        |    0 |     0 |          0 |    234240 |  0.00 |
 | CARRY8                     |    0 |     0 |          0 |     14640 |  0.00 |
 | F7 Muxes                   |    3 |     0 |          0 |     58560 | <0.01 |
@@ -63,8 +63,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 24    |          Yes |         Set |            - |
-| 872   |          Yes |       Reset |            - |
+| 28    |          Yes |         Set |            - |
+| 920   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -98,7 +98,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| Bonded IOB |    1 |     0 |          0 |       189 |  0.53 |
+| Bonded IOB |    5 |     0 |          0 |       189 |  2.65 |
 +------------+------+-------+------------+-----------+-------+
 
 
@@ -159,21 +159,21 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       |  872 |            Register |
+| FDRE       |  920 |            Register |
 | LUT3       |  299 |                 CLB |
 | LUT1       |  286 |                 CLB |
-| LUT6       |  218 |                 CLB |
-| LUT4       |  140 |                 CLB |
-| LUT5       |  130 |                 CLB |
+| LUT6       |  223 |                 CLB |
+| LUT4       |  151 |                 CLB |
+| LUT5       |  134 |                 CLB |
 | LUT2       |   78 |                 CLB |
 | SRLC32E    |   51 |                 CLB |
+| FDSE       |   28 |            Register |
 | SRL16E     |   27 |                 CLB |
-| FDSE       |   24 |            Register |
+| OBUF       |    5 |                 I/O |
 | MUXF7      |    3 |                 CLB |
 | BUFG_PS    |    2 |               Clock |
 | BUFGCE     |    2 |               Clock |
 | PS8        |    1 |            Advanced |
-| OBUF       |    1 |                 I/O |
 | MMCME4_ADV |    1 |               Clock |
 +------------+------+---------------------+
 

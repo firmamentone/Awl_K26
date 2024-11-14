@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Wed Nov 13 15:20:10 2024
+| Date             : Thu Nov 14 10:32:12 2024
 | Host             : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 | Command          : report_power -file project_1_wrapper_power_routed.rpt -pb project_1_wrapper_power_summary_routed.pb -rpx project_1_wrapper_power_routed.rpx
 | Design           : project_1_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.005 |        6 |       --- |             --- |
-| CLB Logic               |     0.002 |     1927 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      631 |    117120 |            0.54 |
+| CLB Logic               |     0.002 |     2003 |       --- |             --- |
+|   LUT as Logic          |     0.002 |      648 |    117120 |            0.55 |
 |   LUT as Shift Register |    <0.001 |       70 |     57600 |            0.12 |
-|   Register              |    <0.001 |      896 |    234240 |            0.38 |
-|   Others                |     0.000 |       83 |       --- |             --- |
+|   Register              |    <0.001 |      953 |    234240 |            0.41 |
+|   Others                |     0.000 |       82 |       --- |             --- |
 |   F7/F8 Muxes           |     0.000 |        3 |    117120 |           <0.01 |
-| Signals                 |     0.002 |     1487 |       --- |             --- |
+| Signals                 |     0.002 |     1558 |       --- |             --- |
 | MMCM                    |     0.096 |        0 |       --- |             --- |
-| I/O                     |    <0.001 |        1 |       189 |            0.53 |
+| I/O                     |    <0.001 |        5 |       189 |            2.65 |
 | PS8                     |     2.744 |        1 |       --- |             --- |
 | Static Power            |     0.303 |          |           |                 |
 |   PS Static             |     0.000 |          |           |                 |

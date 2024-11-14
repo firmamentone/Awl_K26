@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xEC3FEEF6EC3FEEF6",
+      "boundary_crc": "0x635D79A1635D79A1",
       "device": "xck26-sfvc784-2LVI-i",
       "gen_directory": "../../../../project_1.gen/sources_1/bd/project_1",
       "name": "project_1",
@@ -32,7 +32,7 @@
     "ports": {
       "GPIO_Out0": {
         "direction": "O",
-        "left": "0",
+        "left": "4",
         "right": "0"
       }
     },
@@ -3750,7 +3750,7 @@
             "value": "1"
           },
           "C_GPIO_WIDTH": {
-            "value": "1"
+            "value": "5"
           }
         }
       },
@@ -3765,7 +3765,7 @@
             "value": "1"
           },
           "C_GPIO_WIDTH": {
-            "value": "1"
+            "value": "5"
           }
         }
       }

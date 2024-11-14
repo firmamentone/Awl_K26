@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Thu Nov 14 10:26:31 2024
+//Date        : Thu Nov 14 14:43:27 2024
 //Host        : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 //Command     : generate_target project_1.bd
 //Design      : project_1
@@ -408,13 +408,16 @@ endmodule
 
 (* CORE_GENERATION_INFO = "project_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=project_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "project_1.hwdef" *) 
 module project_1
-   (GPIO_Out0);
+   (GPIO_In0,
+    GPIO_Out0);
+  input [4:0]GPIO_In0;
   output [4:0]GPIO_Out0;
 
   wire [4:0]axi_gpio_0_gpio_io_o;
   wire axi_intc_0_irq;
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_clk_out2;
+  wire [4:0]gpio_io_i_1;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire [39:0]ps8_0_axi_periph_M00_AXI_ARADDR;
   wire ps8_0_axi_periph_M00_AXI_ARREADY;
@@ -508,6 +511,7 @@ module project_1
   wire zynq_ultra_ps_e_0_pl_resetn0;
 
   assign GPIO_Out0[4:0] = axi_gpio_0_gpio_io_o;
+  assign gpio_io_i_1 = GPIO_In0[4:0];
   project_1_axi_gpio_0_0 axi_gpio_0
        (.gpio_io_o(axi_gpio_0_gpio_io_o),
         .s_axi_aclk(clk_wiz_0_clk_out2),
@@ -530,7 +534,7 @@ module project_1
         .s_axi_wstrb(ps8_0_axi_periph_M01_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M01_AXI_WVALID));
   project_1_axi_gpio_1_1 axi_gpio_1
-       (.gpio_io_i(axi_gpio_0_gpio_io_o),
+       (.gpio_io_i(gpio_io_i_1),
         .s_axi_aclk(clk_wiz_0_clk_out2),
         .s_axi_araddr(ps8_0_axi_periph_M02_AXI_ARADDR[8:0]),
         .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),

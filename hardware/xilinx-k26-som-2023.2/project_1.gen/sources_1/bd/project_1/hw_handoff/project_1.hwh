@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 14 10:26:31 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 14 14:43:28 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:k26i:part0:1.4" DEVICE="xck26" NAME="project_1" PACKAGE="sfvc784" SPEEDGRADE="-2LVI"/>
 
   <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="4" NAME="GPIO_In0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_GPIO_In0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_i"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="O" LEFT="4" NAME="GPIO_Out0" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
@@ -212,7 +217,6 @@
         <PORT DIR="O" LEFT="4" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="GPIO_Out0"/>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="199998000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
@@ -566,9 +570,9 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x8002FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="4" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
+        <PORT DIR="I" LEFT="4" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_GPIO_In0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="GPIO_In0"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="199998000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">

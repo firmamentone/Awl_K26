@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x635D79A1635D79A1",
+      "boundary_crc": "0x4D9D23B24D9D23B2",
       "device": "xck26-sfvc784-2LVI-i",
       "gen_directory": "../../../../project_1.gen/sources_1/bd/project_1",
       "name": "project_1",
@@ -32,6 +32,11 @@
     "ports": {
       "GPIO_Out0": {
         "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "GPIO_In0": {
+        "direction": "I",
         "left": "4",
         "right": "0"
       }
@@ -3800,8 +3805,7 @@
       "axi_gpio_0_gpio_io_o": {
         "ports": [
           "axi_gpio_0/gpio_io_o",
-          "GPIO_Out0",
-          "axi_gpio_1/gpio_io_i"
+          "GPIO_Out0"
         ]
       },
       "axi_intc_0_irq": {
@@ -3829,6 +3833,12 @@
           "ps8_0_axi_periph/M01_ACLK",
           "ps8_0_axi_periph/M02_ACLK",
           "axi_gpio_1/s_axi_aclk"
+        ]
+      },
+      "gpio_io_i_1": {
+        "ports": [
+          "GPIO_In0",
+          "axi_gpio_1/gpio_io_i"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

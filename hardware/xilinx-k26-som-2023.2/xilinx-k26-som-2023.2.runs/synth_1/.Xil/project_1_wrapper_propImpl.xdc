@@ -24,3 +24,13 @@ set_property src_info {type:XDC file:4 line:13 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN AF10 [get_ports {GPIO_Out0[3]}];
 set_property src_info {type:XDC file:4 line:15 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AD10 [get_ports {GPIO_Out0[4]}]
+set_property src_info {type:XDC file:4 line:17 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AE12 [get_ports {GPIO_In0[0]}];
+set_property src_info {type:XDC file:4 line:19 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AF12 [get_ports {GPIO_In0[1]}];
+set_property src_info {type:XDC file:4 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AG10 [get_ports {GPIO_In0[2]}];
+set_property src_info {type:XDC file:4 line:23 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AH10 [get_ports {GPIO_In0[3]}];
+set_property src_info {type:XDC file:4 line:25 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AG11 [get_ports {GPIO_In0[4]}]

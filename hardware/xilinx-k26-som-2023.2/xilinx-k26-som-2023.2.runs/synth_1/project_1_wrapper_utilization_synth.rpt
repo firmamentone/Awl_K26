@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Thu Nov 14 10:27:59 2024
+| Date         : Thu Nov 14 14:44:25 2024
 | Host         : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_utilization -file project_1_wrapper_utilization_synth.rpt -pb project_1_wrapper_utilization_synth.pb
 | Design       : project_1_wrapper
@@ -98,7 +98,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| Bonded IOB |    5 |     0 |          0 |       189 |  2.65 |
+| Bonded IOB |   10 |     0 |          0 |       189 |  5.29 |
 +------------+------+-------+------------+-----------+-------+
 
 
@@ -170,6 +170,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | FDSE       |   28 |            Register |
 | SRL16E     |   27 |                 CLB |
 | OBUF       |    5 |                 I/O |
+| INBUF      |    5 |                 I/O |
+| IBUFCTRL   |    5 |              Others |
 | MUXF7      |    3 |                 CLB |
 | BUFG_PS    |    2 |               Clock |
 | BUFGCE     |    2 |               Clock |

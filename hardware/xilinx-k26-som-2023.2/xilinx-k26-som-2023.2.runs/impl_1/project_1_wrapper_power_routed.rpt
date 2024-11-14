@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Thu Nov 14 10:32:12 2024
+| Date             : Thu Nov 14 14:45:40 2024
 | Host             : 51-0B10160-01 running 64-bit Ubuntu 20.04.4 LTS
 | Command          : report_power -file project_1_wrapper_power_routed.rpt -pb project_1_wrapper_power_summary_routed.pb -rpx project_1_wrapper_power_routed.rpx
 | Design           : project_1_wrapper
@@ -30,15 +30,15 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.152        |
+| Total On-Chip Power (W)  | 3.153        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.849        |
+| Dynamic (W)              | 2.850        |
 | Device Static (W)        | 0.303        |
 | Effective TJA (C/W)      | 2.3          |
 | Max Ambient (C)          | 92.7         |
 | Junction Temperature (C) | 32.3         |
-| Confidence Level         | Medium       |
+| Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
 | Design Nets Matched      | NA           |
@@ -54,19 +54,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.005 |        6 |       --- |             --- |
 | CLB Logic               |     0.002 |     2003 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      648 |    117120 |            0.55 |
+|   LUT as Logic          |     0.002 |      649 |    117120 |            0.55 |
 |   LUT as Shift Register |    <0.001 |       70 |     57600 |            0.12 |
 |   Register              |    <0.001 |      953 |    234240 |            0.41 |
 |   Others                |     0.000 |       82 |       --- |             --- |
 |   F7/F8 Muxes           |     0.000 |        3 |    117120 |           <0.01 |
-| Signals                 |     0.002 |     1558 |       --- |             --- |
+| Signals                 |     0.002 |     1563 |       --- |             --- |
 | MMCM                    |     0.096 |        0 |       --- |             --- |
-| I/O                     |    <0.001 |        5 |       189 |            2.65 |
+| I/O                     |    <0.001 |       10 |       189 |            5.29 |
 | PS8                     |     2.744 |        1 |       --- |             --- |
 | Static Power            |     0.303 |          |           |                 |
 |   PS Static             |     0.000 |          |           |                 |
 |   PL Static             |     0.303 |          |           |                 |
-| Total                   |     3.152 |          |           |                 |
+| Total                   |     3.153 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -113,17 +113,17 @@ Table of Contents
 1.3 Confidence Level
 --------------------
 
-+-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
-+-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Design implementation state | High       | Design is routed                               |                                                                                                            |
-| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
-| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
-| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
-| Device models               | High       | Device models are Production                   |                                                                                                            |
-|                             |            |                                                |                                                                                                            |
-| Overall confidence level    | Medium     |                                                |                                                                                                            |
-+-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
 
 2. Settings
@@ -165,7 +165,7 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| project_1_wrapper     |     2.849 |
+| project_1_wrapper     |     2.850 |
 |   project_1_i         |     2.849 |
 |     clk_wiz_0         |     0.097 |
 |       inst            |     0.097 |
